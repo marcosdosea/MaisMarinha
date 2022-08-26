@@ -252,7 +252,7 @@
 											"top": 99.5,
 											"width": 202,
 											"height": 13,
-											"text": "Consultar dados meteorológicos"
+											"text": "Consultar Dados Clima"
 										},
 										{
 											"_type": "LabelView",
@@ -285,7 +285,7 @@
 									"font": "Arial;13;0",
 									"left": 364.5,
 									"top": 92.5,
-									"width": 212.97265625,
+									"width": 212,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF/vq7etR+8DJU="
@@ -1409,7 +1409,7 @@
 											"top": 811.5,
 											"width": 198,
 											"height": 13,
-											"text": "Manter Dados Meteorológicos"
+											"text": "Manter Dados Clima"
 										},
 										{
 											"_type": "LabelView",
@@ -6865,7 +6865,7 @@
 					"_parent": {
 						"$ref": "AAAAAAF/vqJICRrFO2A="
 					},
-					"name": "Manter Dados Meteorológicos"
+					"name": "Manter Dados Clima"
 				},
 				{
 					"_type": "UMLUseCase",
@@ -6896,7 +6896,7 @@
 					"_parent": {
 						"$ref": "AAAAAAF/vqJICRrFO2A="
 					},
-					"name": "Consultar dados meteorológicos",
+					"name": "Consultar Dados Clima",
 					"ownedElements": [
 						{
 							"_type": "UMLExtend",
@@ -12217,9 +12217,9 @@
 														"$ref": "AAAAAAGA4rX+HQHdFWY="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 5,
-													"width": 188.154296875,
+													"width": 165.607421875,
 													"height": 13,
 													"text": "SequenceDiagramInserirPessoa"
 												},
@@ -12232,7 +12232,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 5,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -13564,9 +13564,9 @@
 														"$ref": "AAAAAAGA4r9YyAcwwB0="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 204.7724609375,
+													"width": 179.3310546875,
 													"height": 13,
 													"text": "SequenceDiagramRemoverPessoa"
 												},
@@ -13579,7 +13579,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -14788,9 +14788,9 @@
 														"$ref": "AAAAAAGA4sTzkQoETa0="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 192.49609375,
+													"width": 167.7783203125,
 													"height": 13,
 													"text": "SequenceDiagramBuscarPessoa"
 												},
@@ -14803,7 +14803,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -15756,9 +15756,9 @@
 														"$ref": "AAAAAAGA4sXgiQuXHcQ="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 185.99609375,
+													"width": 163.44287109375,
 													"height": 13,
 													"text": "SequenceDiagramEditarPessoa"
 												},
@@ -15771,7 +15771,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -17175,9 +17175,9 @@
 														"$ref": "AAAAAAGCrjQQln3bjQM="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 179.470703125,
+													"width": 161.2783203125,
 													"height": 13,
 													"text": "SequenceDiagramInserirCurso"
 												},
@@ -17190,7 +17190,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -18527,9 +18527,9 @@
 														"$ref": "AAAAAAGCrju2nX/EEqM="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 5,
-													"width": 204.7724609375,
+													"width": 179.3310546875,
 													"height": 13,
 													"text": "SequenceDiagramRemoverPessoa"
 												},
@@ -18542,7 +18542,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 5,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -19745,9 +19745,9 @@
 														"$ref": "AAAAAAGCrkHDX4E3vQA="
 													},
 													"font": "Arial;13;0",
-													"left": 24.72998046875,
+													"left": 22.55908203125,
 													"top": 5,
-													"width": 183.8125,
+													"width": 163.44921875,
 													"height": 13,
 													"text": "SequenceDiagramBuscarCurso"
 												},
@@ -19760,7 +19760,7 @@
 													"font": "Arial;13;1",
 													"left": 5,
 													"top": 5,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -20711,9 +20711,9 @@
 														"$ref": "AAAAAAGCrkQnb4Jy4/o="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 177.3125,
+													"width": 159.11376953125,
 													"height": 13,
 													"text": "SequenceDiagramEditarCurso"
 												},
@@ -20726,7 +20726,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -28593,7 +28593,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGAvQ9zs11gmUw="
 					},
-					"name": "TelaManterDadosMeteorológicos",
+					"name": "TelaManterDadosClima",
 					"ownedElements": [
 						{
 							"_type": "UMLAssociation",
@@ -28646,7 +28646,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGAvr3+4pztaJ0="
 							},
-							"name": "inserirDadoMeteorológico"
+							"name": "inserirDadoClima"
 						},
 						{
 							"_type": "UMLOperation",
@@ -28654,7 +28654,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGAvr3+4pztaJ0="
 							},
-							"name": "buscarDadoMeteorológico"
+							"name": "buscarDadoClima"
 						},
 						{
 							"_type": "UMLOperation",
@@ -28662,7 +28662,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGAvr3+4pztaJ0="
 							},
-							"name": "removerDadoMeteorológico"
+							"name": "removerDadoClima"
 						},
 						{
 							"_type": "UMLOperation",
@@ -28670,7 +28670,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGAvr3+4pztaJ0="
 							},
-							"name": "alterarDadoMeteorológico"
+							"name": "alterarDadoClima"
 						}
 					]
 				},
@@ -29127,7 +29127,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGAvQ9zs11gmUw="
 					},
-					"name": "ControladorDadosMeteorológicos",
+					"name": "ControladorDadosClima",
 					"ownedElements": [
 						{
 							"_type": "UMLDependency",
@@ -30701,7 +30701,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGAvQ9zs11gmUw="
 					},
-					"name": "PersistenciaDadosMeteorológicos",
+					"name": "PersistenciaDadosClima",
 					"ownedElements": [
 						{
 							"_type": "UMLDependency",
@@ -43865,7 +43865,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGAvQ9zs11gmUw="
 					},
-					"name": "UC-ManterDadosMeteorológicos",
+					"name": "UC-ManterDadosClima",
 					"ownedViews": [
 						{
 							"_type": "UMLClassView",
@@ -43912,7 +43912,7 @@
 											"top": 126,
 											"width": 203.46142578125,
 											"height": 13,
-											"text": "TelaManterDadosMeteorológicos"
+											"text": "TelaManterDadosClima"
 										},
 										{
 											"_type": "LabelView",
@@ -44000,7 +44000,7 @@
 											"top": 149,
 											"width": 203.46142578125,
 											"height": 13,
-											"text": "+inserirDadoMeteorológico()",
+											"text": "+inserirDadoClima()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -44017,7 +44017,7 @@
 											"top": 164,
 											"width": 203.46142578125,
 											"height": 13,
-											"text": "+buscarDadoMeteorológico()",
+											"text": "+buscarDadoClima()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -44034,7 +44034,7 @@
 											"top": 179,
 											"width": 203.46142578125,
 											"height": 13,
-											"text": "+removerDadoMeteorológico()",
+											"text": "+removerDadoClima()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -44051,7 +44051,7 @@
 											"top": 194,
 											"width": 203.46142578125,
 											"height": 13,
-											"text": "+alterarDadoMeteorológico()",
+											"text": "+alterarDadoClima()",
 											"horizontalAlignment": 0
 										}
 									],
@@ -44163,7 +44163,7 @@
 											"top": 342,
 											"width": 210.17724609375,
 											"height": 13,
-											"text": "ControladorDadosMeteorológicos"
+											"text": "ControladorDadosClima"
 										},
 										{
 											"_type": "LabelView",
@@ -44766,7 +44766,7 @@
 											"top": 340,
 											"width": 212.39892578125,
 											"height": 13,
-											"text": "PersistenciaDadosMeteorológicos"
+											"text": "PersistenciaDadosClima"
 										},
 										{
 											"_type": "LabelView",
@@ -46274,9 +46274,9 @@
 														"$ref": "AAAAAAGA4tDfYRVvwTg="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 199.7197265625,
+													"width": 180.03564453125,
 													"height": 13,
 													"text": "SequenceDiagramInserirCapitania"
 												},
@@ -46289,7 +46289,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -47626,9 +47626,9 @@
 														"$ref": "AAAAAAGA4tZdLheqSPQ="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 115.9052734375,
+													"width": 102.791015625,
 													"height": 13,
 													"text": "SequenceDiagram1"
 												},
@@ -47641,7 +47641,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -48854,9 +48854,9 @@
 														"$ref": "AAAAAAGA4tmN8Rl0gSc="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 115.9052734375,
+													"width": 102.791015625,
 													"height": 13,
 													"text": "SequenceDiagram1"
 												},
@@ -48869,7 +48869,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -49826,9 +49826,9 @@
 														"$ref": "AAAAAAGA4tmXtRsIBDY="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 115.9052734375,
+													"width": 102.791015625,
 													"height": 13,
 													"text": "SequenceDiagram1"
 												},
@@ -49841,7 +49841,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -51249,9 +51249,9 @@
 														"$ref": "AAAAAAGA4tzt0hxfuY8="
 													},
 													"font": "Arial;13;0",
-													"left": 40.72998046875,
+													"left": 38.55908203125,
 													"top": 13,
-													"width": 217.78515625,
+													"width": 198.0947265625,
 													"height": 13,
 													"text": "SequenceDiagramInserirAtendimento"
 												},
@@ -51264,7 +51264,7 @@
 													"font": "Arial;13;1",
 													"left": 21,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -52600,9 +52600,9 @@
 														"$ref": "AAAAAAGA4uIB7h3iJcI="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 234.4033203125,
+													"width": 211.818359375,
 													"height": 13,
 													"text": "SequenceDiagramRemoverAtendimento"
 												},
@@ -52615,7 +52615,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -53823,9 +53823,9 @@
 														"$ref": "AAAAAAGA4u4rjiav1l4="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 234.4033203125,
+													"width": 211.818359375,
 													"height": 13,
 													"text": "SequenceDiagramRemoverAtendimento"
 												},
@@ -53838,7 +53838,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -54689,9 +54689,9 @@
 																"$ref": "AAAAAAGA4u4s4ifBYJI="
 															},
 															"font": "Arial;13;0",
-															"left": 32.72998046875,
+															"left": 30.55908203125,
 															"top": 13,
-															"width": 234.4033203125,
+															"width": 211.818359375,
 															"height": 13,
 															"text": "SequenceDiagramRemoverAtendimento"
 														},
@@ -54704,7 +54704,7 @@
 															"font": "Arial;13;1",
 															"left": 13,
 															"top": 13,
-															"width": 14.72998046875,
+															"width": 12.55908203125,
 															"height": 13,
 															"text": "sd"
 														}
@@ -55757,9 +55757,9 @@
 														"$ref": "AAAAAAGA4vCsiSmqE/o="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 234.4033203125,
+													"width": 211.818359375,
 													"height": 13,
 													"text": "SequenceDiagramRemoverAtendimento"
 												},
@@ -55772,7 +55772,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -57175,9 +57175,9 @@
 														"$ref": "AAAAAAGA4ulCkyMwH2c="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 200.4306640625,
+													"width": 180.04833984375,
 													"height": 13,
 													"text": "SequenceDiagramInserirConcurso"
 												},
@@ -57190,7 +57190,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -58527,9 +58527,9 @@
 														"$ref": "AAAAAAGA48ZGLk/W2f4="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 217.048828125,
+													"width": 193.77197265625,
 													"height": 13,
 													"text": "SequenceDiagramRemoverConcurso"
 												},
@@ -58542,7 +58542,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -59739,9 +59739,9 @@
 														"$ref": "AAAAAAGA48phZlHDRyQ="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 204.7724609375,
+													"width": 182.21923828125,
 													"height": 13,
 													"text": "SequenceDiagramBuscarConcurso"
 												},
@@ -59754,7 +59754,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -60695,9 +60695,9 @@
 														"$ref": "AAAAAAGA48wfrlObqEM="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 202.6015625,
+													"width": 182.93017578125,
 													"height": 13,
 													"text": "SequenceDiagramAlterarConcurso"
 												},
@@ -60710,7 +60710,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -62067,7 +62067,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGAvQ9zs11gmUw="
 					},
-					"name": "CollaborationManterDadosMeteorológicos",
+					"name": "CollaborationManterDadosClima",
 					"ownedElements": [
 						{
 							"_type": "UMLInteraction",
@@ -62075,7 +62075,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGA487rKVV1Iys="
 							},
-							"name": "InteractionInserirDadosMeteorológicos",
+							"name": "InteractionInserirDadosClima",
 							"ownedElements": [
 								{
 									"_type": "UMLSequenceDiagram",
@@ -62187,7 +62187,7 @@
 															"font": "Arial;13;0",
 															"width": 260.8251953125,
 															"height": 13,
-															"text": "(from InteractionInserirDadosMeteorológicos)"
+															"text": "(from InteractionInserirDadosClima)"
 														},
 														{
 															"_type": "LabelView",
@@ -62290,7 +62290,7 @@
 															"top": 47,
 															"width": 283.076171875,
 															"height": 13,
-															"text": ": PersistenciaDadosMeteorológicos"
+															"text": ": PersistenciaDadosClima"
 														},
 														{
 															"_type": "LabelView",
@@ -62303,7 +62303,7 @@
 															"left": 942,
 															"width": 260.8251953125,
 															"height": 13,
-															"text": "(from InteractionInserirDadosMeteorológicos)"
+															"text": "(from InteractionInserirDadosClima)"
 														},
 														{
 															"_type": "LabelView",
@@ -62419,7 +62419,7 @@
 															"left": -456,
 															"width": 260.8251953125,
 															"height": 13,
-															"text": "(from InteractionInserirDadosMeteorológicos)"
+															"text": "(from InteractionInserirDadosClima)"
 														},
 														{
 															"_type": "LabelView",
@@ -62523,7 +62523,7 @@
 															"top": 87,
 															"width": 270.8544921875,
 															"height": 13,
-															"text": ": ControladorDadosMeteorológicos"
+															"text": ": ControladorDadosClima"
 														},
 														{
 															"_type": "LabelView",
@@ -62536,7 +62536,7 @@
 															"left": 248,
 															"width": 260.8251953125,
 															"height": 13,
-															"text": "(from InteractionInserirDadosMeteorológicos)"
+															"text": "(from InteractionInserirDadosClima)"
 														},
 														{
 															"_type": "LabelView",
@@ -62640,7 +62640,7 @@
 															"top": 87,
 															"width": 264.138671875,
 															"height": 13,
-															"text": ": TelaManterDadosMeteorológicos"
+															"text": ": TelaManterDadosClima"
 														},
 														{
 															"_type": "LabelView",
@@ -62653,7 +62653,7 @@
 															"left": -228,
 															"width": 260.8251953125,
 															"height": 13,
-															"text": "(from InteractionInserirDadosMeteorológicos)"
+															"text": "(from InteractionInserirDadosClima)"
 														},
 														{
 															"_type": "LabelView",
@@ -62745,7 +62745,7 @@
 														"$ref": "AAAAAAGA5BG4u1hvAyM="
 													},
 													"edgePosition": 1,
-													"text": "1 : inserirDadoMeteorológico()"
+													"text": "1 : inserirDadoClima()"
 												},
 												{
 													"_type": "EdgeLabelView",
@@ -63423,7 +63423,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGA487rKVV1Iys="
 							},
-							"name": "InteractionRemoverDadosMeteorológicos",
+							"name": "InteractionRemoverDadosClima",
 							"ownedElements": [
 								{
 									"_type": "UMLSequenceDiagram",
@@ -63533,7 +63533,7 @@
 															"font": "Arial;13;0",
 															"width": 277.443359375,
 															"height": 13,
-															"text": "(from InteractionRemoverDadosMeteorológicos)"
+															"text": "(from InteractionRemoverDadosClima)"
 														},
 														{
 															"_type": "LabelView",
@@ -63636,7 +63636,7 @@
 															"top": 87,
 															"width": 274.138671875,
 															"height": 13,
-															"text": ": TelaManterDadosMeteorológicos"
+															"text": ": TelaManterDadosClima"
 														},
 														{
 															"_type": "LabelView",
@@ -63649,7 +63649,7 @@
 															"left": -262,
 															"width": 277.443359375,
 															"height": 13,
-															"text": "(from InteractionRemoverDadosMeteorológicos)"
+															"text": "(from InteractionRemoverDadosClima)"
 														},
 														{
 															"_type": "LabelView",
@@ -63752,7 +63752,7 @@
 															"top": 87,
 															"width": 280.8544921875,
 															"height": 13,
-															"text": ": ControladorDadosMeteorológicos"
+															"text": ": ControladorDadosClima"
 														},
 														{
 															"_type": "LabelView",
@@ -63764,7 +63764,7 @@
 															"font": "Arial;13;0",
 															"width": 277.443359375,
 															"height": 13,
-															"text": "(from InteractionRemoverDadosMeteorológicos)"
+															"text": "(from InteractionRemoverDadosClima)"
 														},
 														{
 															"_type": "LabelView",
@@ -63867,7 +63867,7 @@
 															"top": 47,
 															"width": 283.076171875,
 															"height": 13,
-															"text": ": PersistenciaDadosMeteorológicos"
+															"text": ": PersistenciaDadosClima"
 														},
 														{
 															"_type": "LabelView",
@@ -63880,7 +63880,7 @@
 															"left": -298,
 															"width": 277.443359375,
 															"height": 13,
-															"text": "(from InteractionRemoverDadosMeteorológicos)"
+															"text": "(from InteractionRemoverDadosClima)"
 														},
 														{
 															"_type": "LabelView",
@@ -63972,7 +63972,7 @@
 														"$ref": "AAAAAAGA5Bb9SFoW86g="
 													},
 													"edgePosition": 1,
-													"text": "1 : buscarDadoMeteorológico()"
+													"text": "1 : buscarDadoClima()"
 												},
 												{
 													"_type": "EdgeLabelView",
@@ -64194,7 +64194,7 @@
 														"$ref": "AAAAAAGA5BdtjFpGNsQ="
 													},
 													"edgePosition": 1,
-													"text": "3 : removerDadoMeteorológico()"
+													"text": "3 : removerDadoClima()"
 												},
 												{
 													"_type": "EdgeLabelView",
@@ -64640,7 +64640,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGA487rKVV1Iys="
 							},
-							"name": "InteractionBuscarDadosMeteorológicos",
+							"name": "InteractionBuscarDadosClima",
 							"ownedElements": [
 								{
 									"_type": "UMLSequenceDiagram",
@@ -64750,7 +64750,7 @@
 															"font": "Arial;13;0",
 															"width": 277.443359375,
 															"height": 13,
-															"text": "(from InteractionBuscarDadosMeteorológicos)"
+															"text": "(from InteractionBuscarDadosClima)"
 														},
 														{
 															"_type": "LabelView",
@@ -64853,7 +64853,7 @@
 															"top": 87,
 															"width": 274.138671875,
 															"height": 13,
-															"text": ": TelaManterDadosMeteorológicos"
+															"text": ": TelaManterDadosClima"
 														},
 														{
 															"_type": "LabelView",
@@ -64866,7 +64866,7 @@
 															"left": -262,
 															"width": 277.443359375,
 															"height": 13,
-															"text": "(from InteractionBuscarDadosMeteorológicos)"
+															"text": "(from InteractionBuscarDadosClima)"
 														},
 														{
 															"_type": "LabelView",
@@ -64969,7 +64969,7 @@
 															"top": 87,
 															"width": 280.8544921875,
 															"height": 13,
-															"text": ": ControladorDadosMeteorológicos"
+															"text": ": ControladorDadosClima"
 														},
 														{
 															"_type": "LabelView",
@@ -64981,7 +64981,7 @@
 															"font": "Arial;13;0",
 															"width": 277.443359375,
 															"height": 13,
-															"text": "(from InteractionBuscarDadosMeteorológicos)"
+															"text": "(from InteractionBuscarDadosClima)"
 														},
 														{
 															"_type": "LabelView",
@@ -65084,7 +65084,7 @@
 															"top": 47,
 															"width": 283.076171875,
 															"height": 13,
-															"text": ": PersistenciaDadosMeteorológicos"
+															"text": ": PersistenciaDadosClima"
 														},
 														{
 															"_type": "LabelView",
@@ -65097,7 +65097,7 @@
 															"left": -298,
 															"width": 277.443359375,
 															"height": 13,
-															"text": "(from InteractionBuscarDadosMeteorológicos)"
+															"text": "(from InteractionBuscarDadosClima)"
 														},
 														{
 															"_type": "LabelView",
@@ -65189,7 +65189,7 @@
 														"$ref": "AAAAAAGA5Bhp7Fs0/7U="
 													},
 													"edgePosition": 1,
-													"text": "1 : buscarDadoMeteorológico()"
+													"text": "1 : buscarDadoClima()"
 												},
 												{
 													"_type": "EdgeLabelView",
@@ -65500,7 +65500,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGA5Bhp7FsT28I="
 									},
-									"name": "InteractionRemoverDadosMeteorológicos",
+									"name": "InteractionRemoverDadosClima",
 									"ownedElements": [
 										{
 											"_type": "UMLSequenceDiagram",
@@ -65610,7 +65610,7 @@
 																	"font": "Arial;13;0",
 																	"width": 277.443359375,
 																	"height": 13,
-																	"text": "(from InteractionRemoverDadosMeteorológicos)"
+																	"text": "(from InteractionRemoverDadosClima)"
 																},
 																{
 																	"_type": "LabelView",
@@ -65713,7 +65713,7 @@
 																	"top": 87,
 																	"width": 274.138671875,
 																	"height": 13,
-																	"text": ": TelaManterDadosMeteorológicos"
+																	"text": ": TelaManterDadosClima"
 																},
 																{
 																	"_type": "LabelView",
@@ -65726,7 +65726,7 @@
 																	"left": -262,
 																	"width": 277.443359375,
 																	"height": 13,
-																	"text": "(from InteractionRemoverDadosMeteorológicos)"
+																	"text": "(from InteractionRemoverDadosClima)"
 																},
 																{
 																	"_type": "LabelView",
@@ -65829,7 +65829,7 @@
 																	"top": 87,
 																	"width": 280.8544921875,
 																	"height": 13,
-																	"text": ": ControladorDadosMeteorológicos"
+																	"text": ": ControladorDadosClima"
 																},
 																{
 																	"_type": "LabelView",
@@ -65841,7 +65841,7 @@
 																	"font": "Arial;13;0",
 																	"width": 277.443359375,
 																	"height": 13,
-																	"text": "(from InteractionRemoverDadosMeteorológicos)"
+																	"text": "(from InteractionRemoverDadosClima)"
 																},
 																{
 																	"_type": "LabelView",
@@ -65944,7 +65944,7 @@
 																	"top": 47,
 																	"width": 283.076171875,
 																	"height": 13,
-																	"text": ": PersistenciaDadosMeteorológicos"
+																	"text": ": PersistenciaDadosClima"
 																},
 																{
 																	"_type": "LabelView",
@@ -65957,7 +65957,7 @@
 																	"left": -298,
 																	"width": 277.443359375,
 																	"height": 13,
-																	"text": "(from InteractionRemoverDadosMeteorológicos)"
+																	"text": "(from InteractionRemoverDadosClima)"
 																},
 																{
 																	"_type": "LabelView",
@@ -66049,7 +66049,7 @@
 																"$ref": "AAAAAAGA5Bhrh1x6C4A="
 															},
 															"edgePosition": 1,
-															"text": "1 : buscarDadoMeteorológico()"
+															"text": "1 : buscarDadoClima()"
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -66271,7 +66271,7 @@
 																"$ref": "AAAAAAGA5Bhrh1yEbyU="
 															},
 															"edgePosition": 1,
-															"text": "3 : removerDadoMeteorológico()"
+															"text": "3 : removerDadoClima()"
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -66818,7 +66818,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGA487rKVV1Iys="
 							},
-							"name": "InteractionAlterarDadosMeteorológicos",
+							"name": "InteractionAlterarDadosClima",
 							"ownedElements": [
 								{
 									"_type": "UMLSequenceDiagram",
@@ -66845,9 +66845,9 @@
 														"$ref": "AAAAAAGA5BiDp14rkt4="
 													},
 													"font": "Arial;13;0",
-													"left": 24.72998046875,
+													"left": 22.55908203125,
 													"top": 5,
-													"width": 115.9052734375,
+													"width": 102.791015625,
 													"height": 13,
 													"text": "SequenceDiagram1"
 												},
@@ -66860,7 +66860,7 @@
 													"font": "Arial;13;1",
 													"left": 5,
 													"top": 5,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -76284,7 +76284,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGAvQ9zs11gmUw="
 					},
-					"name": "UC-ConsultarDadosMeteoológicos",
+					"name": "UC-ConsultarDadosClima",
 					"ownedViews": [
 						{
 							"_type": "UMLClassView",
@@ -76330,7 +76330,7 @@
 											"top": 382,
 											"width": 203.46142578125,
 											"height": 13,
-											"text": "TelaManterDadosMeteorológicos"
+											"text": "TelaManterDadosClima"
 										},
 										{
 											"_type": "LabelView",
@@ -76418,7 +76418,7 @@
 											"top": 405,
 											"width": 203.46142578125,
 											"height": 13,
-											"text": "+inserirDadoMeteorológico()",
+											"text": "+inserirDadoClima()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -76435,7 +76435,7 @@
 											"top": 420,
 											"width": 203.46142578125,
 											"height": 13,
-											"text": "+buscarDadoMeteorológico()",
+											"text": "+buscarDadoClima()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -76452,7 +76452,7 @@
 											"top": 435,
 											"width": 203.46142578125,
 											"height": 13,
-											"text": "+removerDadoMeteorológico()",
+											"text": "+removerDadoClima()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -76469,7 +76469,7 @@
 											"top": 450,
 											"width": 203.46142578125,
 											"height": 13,
-											"text": "+alterarDadoMeteorológico()",
+											"text": "+alterarDadoClima()",
 											"horizontalAlignment": 0
 										}
 									],
@@ -84746,9 +84746,9 @@
 														"$ref": "AAAAAAGCtcbBj4gKoMk="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 262.56787109375,
+													"width": 237.8056640625,
 													"height": 13,
 													"text": "SequenceDiagramSolicitarInscricaoConcurso"
 												},
@@ -84761,7 +84761,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -86327,9 +86327,9 @@
 														"$ref": "AAAAAAGCteEy55nFYV8="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 115.9052734375,
+													"width": 102.791015625,
 													"height": 13,
 													"text": "SequenceDiagram1"
 												},
@@ -86342,7 +86342,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -87941,9 +87941,9 @@
 														"$ref": "AAAAAAGCtfRKHbRoyLs="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 230.81689453125,
+													"width": 208.923828125,
 													"height": 13,
 													"text": "SequenceDiagramAgendarAtendimento"
 												},
@@ -87956,7 +87956,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -96541,7 +96541,7 @@
 									"containerExtending": true,
 									"left": 236,
 									"top": 644,
-									"width": 79.380859375,
+									"width": 71.3125,
 									"height": 36,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGAvRBNPGSkubM="
@@ -96729,7 +96729,7 @@
 									"containerExtending": true,
 									"left": 236,
 									"top": 708,
-									"width": 79.380859375,
+									"width": 71.3125,
 									"height": 36,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGAvRBNPGSuj+8="
@@ -96917,7 +96917,7 @@
 									"containerExtending": true,
 									"left": 236,
 									"top": 764,
-									"width": 79.380859375,
+									"width": 71.3125,
 									"height": 36,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGAvRBNPGS4JSk="
@@ -97105,7 +97105,7 @@
 									"containerExtending": true,
 									"left": 236,
 									"top": 820,
-									"width": 92.013671875,
+									"width": 82.685546875,
 									"height": 36,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGAvRBNPWTCyME="
@@ -97293,7 +97293,7 @@
 									"containerExtending": true,
 									"left": 236,
 									"top": 876,
-									"width": 79.380859375,
+									"width": 71.3125,
 									"height": 36,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGAvRBNPWTMa+Q="
@@ -97407,7 +97407,7 @@
 									"visible": false,
 									"font": "Arial;12;0",
 									"containerExtending": true,
-									"left": 347,
+									"left": 343,
 									"top": 634,
 									"height": 12,
 									"alpha": 1.5707963267948966,
@@ -97429,7 +97429,7 @@
 									"visible": null,
 									"font": "Arial;12;0",
 									"containerExtending": true,
-									"left": 347,
+									"left": 343,
 									"top": 619,
 									"height": 12,
 									"alpha": 1.5707963267948966,
@@ -97451,7 +97451,7 @@
 									"visible": false,
 									"font": "Arial;12;0",
 									"containerExtending": true,
-									"left": 347,
+									"left": 343,
 									"top": 664,
 									"height": 12,
 									"alpha": -1.5707963267948966,
@@ -98221,7 +98221,7 @@
 									"containerExtending": true,
 									"left": 740,
 									"top": 60,
-									"width": 120.396484375,
+									"width": 112.427734375,
 									"height": 22
 								},
 								{
@@ -98378,7 +98378,7 @@
 									"containerExtending": true,
 									"left": 740,
 									"top": 96,
-									"width": 79.380859375,
+									"width": 71.3125,
 									"height": 36,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGAvRBNPmT/wVA="
@@ -98566,7 +98566,7 @@
 									"containerExtending": true,
 									"left": 740,
 									"top": 148,
-									"width": 79.380859375,
+									"width": 71.3125,
 									"height": 36,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGAvRBNPmUJQcw="
