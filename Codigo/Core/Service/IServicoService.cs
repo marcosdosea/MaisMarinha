@@ -11,7 +11,7 @@ namespace Core.Service
         int Create(Servico servico);
         void Edit(Servico servico);
         void Delete(int idServico);
-        Servico Get(int idservico);
+        Servico Get(int idServico);
         IEnumerable<Servico> GetAll();
     }
 }
