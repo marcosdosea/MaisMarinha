@@ -11,7 +11,7 @@ namespace Core.Service
         int Create(Pessoa pessoa);
         void Edit(Pessoa pessoa);
         void Delete(Pessoa pessoa);
-        Pessoa Get(int id);
+        Pessoa Get(int idPessoa);
         IEnumerable<Pessoa> GetAll();
     }
 }
