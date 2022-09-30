@@ -8,5 +8,10 @@ namespace Core.Service
 {
     internal interface IServicoService
     {
+        int Create(Servico servico);
+        void Edit(Servico servico);
+        void Delete(Servico servico);
+        Servico Get(int idservico);
+        IEnumerable<Servico> GetAll();
     }
 }
