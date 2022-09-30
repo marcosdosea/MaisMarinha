@@ -20,7 +20,7 @@ namespace Core
         public virtual DbSet<Agendamento> Agendamentos { get; set; }
         public virtual DbSet<Agendaservico> Agendaservicos { get; set; }
         public virtual DbSet<Capitaniaconcurso> Capitaniaconcursos { get; set; }
-        public virtual DbSet<Capitanium> Capitania { get; set; }
+        public virtual DbSet<Capitania> Capitania { get; set; }
         public virtual DbSet<Clima> Climas { get; set; }
         public virtual DbSet<Concurso> Concursos { get; set; }
         public virtual DbSet<Curso> Cursos { get; set; }
@@ -113,7 +113,7 @@ namespace Core
                     .HasConstraintName("fk_Capitania_has_Concurso_Concurso1");
             });
 
-            modelBuilder.Entity<Capitanium>(entity =>
+            modelBuilder.Entity<Capitania>(entity =>
             {
                 entity.ToTable("capitania");
 

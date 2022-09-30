@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Core.Service
 {
-    internal interface IAtendimentoService
+    public interface IAtendimentoService
     {
 
         int Create(Agendamento agendamento);
