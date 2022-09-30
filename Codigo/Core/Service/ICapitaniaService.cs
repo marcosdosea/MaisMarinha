@@ -11,8 +11,8 @@ namespace Core.Service
 
         int Create(Capitania capitania);
         void Edit(Capitania capitania);
-        void Delete(Capitania capitania);
-        Capitania Get(Capitania capitania);
+        void Delete(int idCapitania);
+        Capitania Get(int idCapitania);
         IEnumerable<Capitania> GetAll();
 
     }
