@@ -8,5 +8,12 @@ namespace Core.Service
 {
     internal interface ICapitaniaService
     {
+
+        int Create(Capitania capitania);
+        void Edit(Capitania capitania);
+        void Delete(Capitania capitania);
+        Capitania Get(Capitania capitania);
+        IEnumerable<Capitania> GetAll();
+
     }
 }
