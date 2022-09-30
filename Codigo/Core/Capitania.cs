@@ -5,9 +5,9 @@ using System.Collections.Generic;
 
 namespace Core
 {
-    public partial class Capitanium
+    public partial class Capitania
     {
-        public Capitanium()
+        public Capitania()
         {
             Capitaniaconcursos = new HashSet<Capitaniaconcurso>();
         }
