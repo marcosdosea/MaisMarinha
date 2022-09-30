@@ -8,5 +8,12 @@ namespace Core.Service
 {
     internal interface IConcursoService
     {
+        
+        int Create(Concurso concurso);
+        void Edit(Concurso concurso);
+        void Delete(int idConcurso);
+        Concurso Get(int idConcurso);
+        IEnumerable<Concurso> GetAll();
+        
     }
 }
