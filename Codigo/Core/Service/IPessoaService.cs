@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Core.Service
 {
-    internal interface IPessoaService
+    public interface IPessoaService
     {
         int Create(Pessoa pessoa);
         void Edit(Pessoa pessoa);
