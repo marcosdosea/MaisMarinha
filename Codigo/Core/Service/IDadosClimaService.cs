@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Core.Service
 {
-    internal interface IDadosClimaService
+    public interface IDadosClimaService
     {
         int Create(Clima clima);
         void Edit(Clima clima);
