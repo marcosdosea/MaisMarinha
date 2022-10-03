@@ -10,7 +10,7 @@ namespace Core
         public int IdCapitania { get; set; }
         public int IdConcurso { get; set; }
 
-        public virtual Capitanium IdCapitaniaNavigation { get; set; }
+        public virtual Capitania IdCapitaniaNavigation { get; set; }
         public virtual Concurso IdConcursoNavigation { get; set; }
     }
 }

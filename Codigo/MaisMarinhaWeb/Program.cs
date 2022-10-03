@@ -1,3 +1,8 @@
+using Core;
+using Core.Service;
+using Microsoft.EntityFrameworkCore;
+using Service;
+
 namespace MaisMarinhaWeb
 {
     public class Program
@@ -8,6 +13,13 @@ namespace MaisMarinhaWeb
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDbContext<MaisMarinhaContext>(
+                options => options.UseMySQL("server=localhost;port=3306;user=root;password=123456;database=maismarinha"));
+
+            builder.Services.AddTransient<IPessoaService, PessoaService>();
+
+            builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             var app = builder.Build();
 
