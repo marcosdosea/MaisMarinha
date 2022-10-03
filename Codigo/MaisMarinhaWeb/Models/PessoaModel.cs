@@ -46,6 +46,7 @@ namespace MaisMarinhaWeb.Models
         [StringLength(15, ErrorMessage = "Numero da residência tem entre 1 e 15 digitos", MinimumLength = 1)]
         public string NumeroEndereco { get; set; }
 
+        [Required(ErrorMessage = "Campo CEP requerido")]
         [Display(Name = "CEP")]
         [DataType(DataType.PostalCode)]
         public string Cep { get; set; }
