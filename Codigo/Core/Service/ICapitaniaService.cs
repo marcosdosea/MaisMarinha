@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Core.Service
 {
-    internal interface ICapitaniaService
+    public interface ICapitaniaService
     {
 
         int Create(Capitania capitania);
