@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Core.Service
 {
-    internal interface ICursoService
+    public interface ICursoService
     {
 
         int Create(Curso curso);
