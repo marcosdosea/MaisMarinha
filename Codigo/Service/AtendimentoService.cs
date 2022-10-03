@@ -19,7 +19,7 @@ namespace Service
         }
 
         /// <summary>
-        /// CRIA UM NOVO AGENDAMENTO
+        /// Insere um agendamento na base de dados
         /// </summary>
         /// <param name="agendamento">Dados do Agendamento</param>
         /// <returns>Id do Agendamento</returns>
@@ -31,7 +31,7 @@ namespace Service
             return agendamento.Id;
         }
         /// <summary>
-        /// REMOVER AGENDAMENTO
+        /// Remove um agendamento na base de dados
         /// </summary>
         /// <param name="idAgendamento"></param>
         public void Delete(int idAgendamento)
@@ -41,7 +41,7 @@ namespace Service
             _context.SaveChanges();            
         }
         /// <summary>
-        /// EDITANDO AGENDAMENTO
+        /// Edita um agendamento na base de dados
         /// </summary>
         /// <param name="agendamento"></param>
         public void Edit(Agendamento agendamento)
@@ -49,12 +49,17 @@ namespace Service
             _context.Update(agendamento);
             _context.SaveChanges();
         }
+        /// <summary>
+        /// Busca um agendamento na base de dados
+        /// </summary>
+        /// <param name="idAgendamento"></param>
+        /// <returns></returns>
         public Agendamento Get(int idAgendamento)
         {
             return _context.Agendamentos.Find(idAgendamento);
         }
         /// <summary>
-        /// BUSCAR AGENDAMENTO
+        /// Retorna todos agendamentos cadastrados na base de dados
         /// </summary>
         /// <param name="idAgendamento"></param>
         /// <returns></returns>
