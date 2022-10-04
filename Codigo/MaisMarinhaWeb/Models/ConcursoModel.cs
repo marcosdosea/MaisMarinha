@@ -14,26 +14,26 @@ namespace MaisMarinhaWeb.Models
         [StringLength(100, ErrorMessage = "O campo aceita até 100 caracteres")]
         public string? Nome { get; set; }
 
-    [Required(ErrorMessage = "Campo Edital é requerido")]
-    [Display(Name = "Edital")]
-    [DataType(DataType.Text)]
-    public int? Edital { get; set; }
-  
+        [Required(ErrorMessage = "Campo Edital é requerido")]
+        [Display(Name = "Edital")]
+        [DataType(DataType.Text)]
+        public int Edital { get; set; }
 
-    [Required(ErrorMessage = "Campo Data Inicial é requerido")]
+
+        [Required(ErrorMessage = "Campo Data Inicial é requerido")]
         [Display(Name = "Data Inicial")]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime? DataInicialInscricao { get; set; }
+        public DateTime DataInicialInscricao { get; set; }
 
         [Required(ErrorMessage = "Campo Data Final é requerido")]
         [Display(Name = "Data Final")]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime? DataFinalInscricao { get; set; }
+        public DateTime DataFinalInscricao { get; set; }
 
         [Required(ErrorMessage = "Campo Data Da Prova é requerido")]
         [Display(Name = "Data Da Prova")]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime? DataProva { get; set; }
+        public DateTime DataProva { get; set; }
 
         [Required(ErrorMessage = "Campo Estado é requerido")]
         [Display(Name = "Estado")]
@@ -50,7 +50,7 @@ namespace MaisMarinhaWeb.Models
         [Required(ErrorMessage = "Campo Vagas é requerido")]
         [Display(Name = "Vagas")]
         [DataType(DataType.Text)]
-        public int? Vagas { get; set; }
+        public int Vagas { get; set; }
 
         [Required(ErrorMessage = "Campo Escolaridade é requerido")]
         [Display(Name = "Escolaridade")]
@@ -79,8 +79,7 @@ namespace MaisMarinhaWeb.Models
         [Required(ErrorMessage = "Campo Valor Inscrição é requerido")]
         [Display(Name = "Valor Inscrição")]
         [DataType(DataType.Text)]
-        [StringLength(10, ErrorMessage = "O campo aceita até 10 caracteres")]
-        public float? ValorInscricao { get; set; }
+        public float ValorInscricao { get; set; }
 
         [Required(ErrorMessage = "Campo Local Prova é requerido")]
         [Display(Name = "Local Prova")]
