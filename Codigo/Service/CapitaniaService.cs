@@ -13,6 +13,12 @@ namespace Service
     public class CapitaniaService : ICapitaniaService
     {
         private readonly MaisMarinhaContext _context;
+
+        public CapitaniaService(MaisMarinhaContext context)
+        {
+            _context = context;
+        }
+
         /// <summary>
         /// Insere uma nova capitania na base de dados
         /// </summary>
