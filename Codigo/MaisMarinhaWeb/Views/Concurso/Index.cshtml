@@ -1,0 +1,131 @@
+﻿@model IEnumerable<MaisMarinhaWeb.Models.ConcursoModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Edital)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataInicialInscricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataFinalInscricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataProva)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vagas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Escolaridade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Etapas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AreaTecnica)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LocalInscricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorInscricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LocalProva)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cargo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Turma)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Edital)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataInicialInscricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataFinalInscricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataProva)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vagas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Escolaridade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Etapas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AreaTecnica)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocalInscricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorInscricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocalProva)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cargo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Turma)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

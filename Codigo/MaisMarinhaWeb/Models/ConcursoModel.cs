@@ -12,49 +12,45 @@ namespace MaisMarinhaWeb.Models
         [Display(Name = "Nome")]
         [DataType(DataType.Text)]
         [StringLength(100, ErrorMessage = "O campo aceita até 100 caracteres")]
-        public string Nome { get; set; }
+        public string? Nome { get; set; }
 
-        [Required(ErrorMessage = "Campo Edital é requerido")]
-        [Display(Name = "Edital")]
-        [DataType(DataType.Text)]
-        [StringLength(10, ErrorMessage = "O campo aceita até 10 caracteres")]
-        public int Edital { get; set; }
+    [Required(ErrorMessage = "Campo Edital é requerido")]
+    [Display(Name = "Edital")]
+    [DataType(DataType.Text)]
+    public int? Edital { get; set; }
+  
 
-        [Required(ErrorMessage = "Campo Data Inicial é requerido")]
+    [Required(ErrorMessage = "Campo Data Inicial é requerido")]
         [Display(Name = "Data Inicial")]
-        [DataType(DataType.Text)]
-        [StringLength(10, ErrorMessage = "O campo aceita até 10 caracteres")]
-        public DateTime DataInicialInscricao { get; set; }
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+        public DateTime? DataInicialInscricao { get; set; }
 
         [Required(ErrorMessage = "Campo Data Final é requerido")]
         [Display(Name = "Data Final")]
-        [DataType(DataType.Text)]
-        [StringLength(10, ErrorMessage = "O campo aceita até 10 caracteres")]
-        public DateTime DataFinalInscricao { get; set; }
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+        public DateTime? DataFinalInscricao { get; set; }
 
         [Required(ErrorMessage = "Campo Data Da Prova é requerido")]
         [Display(Name = "Data Da Prova")]
-        [DataType(DataType.Text)]
-        [StringLength(10, ErrorMessage = "O campo aceita até 10 caracteres")]
-        public DateTime DataProva { get; set; }
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+        public DateTime? DataProva { get; set; }
 
         [Required(ErrorMessage = "Campo Estado é requerido")]
         [Display(Name = "Estado")]
         [DataType(DataType.Text)]
         [StringLength(2, ErrorMessage = "O campo aceita até 2 caracteres")]
-        public string Estado { get; set; }
+        public string? Estado { get; set; }
 
         [Required(ErrorMessage = "Campo Cidade é requerido")]
         [Display(Name = "Cidade")]
         [DataType(DataType.Text)]
         [StringLength(50, ErrorMessage = "O campo aceita até 50 caracteres")]
-        public string Cidade { get; set; }
+        public string? Cidade { get; set; }
 
         [Required(ErrorMessage = "Campo Vagas é requerido")]
         [Display(Name = "Vagas")]
         [DataType(DataType.Text)]
-        [StringLength(10, ErrorMessage = "O campo aceita até 10 caracteres")]
-        public int Vagas { get; set; }
+        public int? Vagas { get; set; }
 
         [Required(ErrorMessage = "Campo Escolaridade é requerido")]
         [Display(Name = "Escolaridade")]
