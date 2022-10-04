@@ -24,7 +24,7 @@ namespace MaisMarinhaWeb.Controllers
         public ActionResult Index()
         {
             var listaCapitania = _capitaniaService.GetAll();
-            var listaCapitaniaModel = _mapper.Map<List<CursoModel>>(listaCapitania);
+            var listaCapitaniaModel = _mapper.Map<List<CapitaniaModel>>(listaCapitania);
             return View(listaCapitaniaModel);
         }
 
@@ -42,7 +42,7 @@ namespace MaisMarinhaWeb.Controllers
             return View();
         }
 
-        // POST: CursoController/Create
+        // POST: CapitaniaController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(CapitaniaModel capitaniaModel)
