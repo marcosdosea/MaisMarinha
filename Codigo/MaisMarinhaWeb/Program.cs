@@ -18,6 +18,7 @@ namespace MaisMarinhaWeb
                 options => options.UseMySQL("server=localhost;port=3306;user=root;password=123456;database=maismarinha"));
 
             builder.Services.AddTransient<IPessoaService, PessoaService>();
+            builder.Services.AddTransient<IConcursoService, ConcursoService>();
 
             builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
