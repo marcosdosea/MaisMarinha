@@ -9,7 +9,7 @@ namespace Core
     {
         public Curso()
         {
-            Inscricaocursos = new HashSet<Inscricaocurso>();
+            Inscricaocursos = new HashSet<InscricaoCurso>();
         }
 
         public int Id { get; set; }
@@ -25,6 +25,7 @@ namespace Core
         public string Duracao { get; set; }
         public int IdCapitania { get; set; }
 
-        public virtual ICollection<Inscricaocurso> Inscricaocursos { get; set; }
+        public virtual Capitania IdCapitaniaNavigation { get; set; }
+        public virtual ICollection<InscricaoCurso> Inscricaocursos { get; set; }
     }
 }
