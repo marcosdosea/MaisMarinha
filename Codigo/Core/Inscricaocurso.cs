@@ -5,8 +5,9 @@ using System.Collections.Generic;
 
 namespace Core
 {
-    public partial class Inscricaocurso
+    public partial class InscricaoCurso
     {
+        public int Id { get; set; }
         public int IdPessoa { get; set; }
         public int IdCurso { get; set; }
         public string Status { get; set; }

@@ -13,5 +13,7 @@ namespace Core
         public DateTime HoraFim { get; set; }
         public int Vagas { get; set; }
         public int IdServico { get; set; }
+
+        public virtual Servico IdServicoNavigation { get; set; }
     }
 }

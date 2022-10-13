@@ -11,7 +11,7 @@ namespace Core
         {
             Agendamentos = new HashSet<Agendamento>();
             Inscricaoconcursos = new HashSet<Inscricaoconcurso>();
-            Inscricaocursos = new HashSet<Inscricaocurso>();
+            Inscricaocursos = new HashSet<InscricaoCurso>();
         }
 
         public int Id { get; set; }
@@ -29,6 +29,6 @@ namespace Core
 
         public virtual ICollection<Agendamento> Agendamentos { get; set; }
         public virtual ICollection<Inscricaoconcurso> Inscricaoconcursos { get; set; }
-        public virtual ICollection<Inscricaocurso> Inscricaocursos { get; set; }
+        public virtual ICollection<InscricaoCurso> Inscricaocursos { get; set; }
     }
 }

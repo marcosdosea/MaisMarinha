@@ -10,6 +10,9 @@ namespace Core
         public Capitania()
         {
             Capitaniaconcursos = new HashSet<Capitaniaconcurso>();
+            Climas = new HashSet<Clima>();
+            Cursos = new HashSet<Curso>();
+            Servicos = new HashSet<Servico>();
         }
 
         public int Id { get; set; }
@@ -25,5 +28,8 @@ namespace Core
         public DateTime HorarioFim { get; set; }
 
         public virtual ICollection<Capitaniaconcurso> Capitaniaconcursos { get; set; }
+        public virtual ICollection<Clima> Climas { get; set; }
+        public virtual ICollection<Curso> Cursos { get; set; }
+        public virtual ICollection<Servico> Servicos { get; set; }
     }
 }

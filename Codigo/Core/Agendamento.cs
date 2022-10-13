@@ -15,5 +15,6 @@ namespace Core
         public int IdServico { get; set; }
 
         public virtual Pessoa IdPessoaNavigation { get; set; }
+        public virtual Servico IdServicoNavigation { get; set; }
     }
 }

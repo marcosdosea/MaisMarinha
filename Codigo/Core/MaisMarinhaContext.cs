@@ -25,14 +25,14 @@ namespace Core
         public virtual DbSet<Concurso> Concursos { get; set; }
         public virtual DbSet<Curso> Cursos { get; set; }
         public virtual DbSet<Inscricaoconcurso> Inscricaoconcursos { get; set; }
-        public virtual DbSet<Inscricaocurso> Inscricaocursos { get; set; }
+        public virtual DbSet<InscricaoCurso> Inscricaocursos { get; set; }
         public virtual DbSet<Pessoa> Pessoas { get; set; }
         public virtual DbSet<Servico> Servicos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             /*
-             if (!optionsBuilder.IsConfigured)
+            if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 optionsBuilder.UseMySQL("server=localhost;port=3306;user=root;password=123456;database=maismarinha");
@@ -52,13 +52,7 @@ namespace Core
 
                 entity.HasIndex(e => e.IdPessoa, "fk_Atendimento_Pessoa1_idx");
 
-                entity.Property(e => e.Id).HasColumnType("int(11)");
-
                 entity.Property(e => e.Data).HasColumnType("date");
-
-                entity.Property(e => e.IdPessoa).HasColumnType("int(11)");
-
-                entity.Property(e => e.IdServico).HasColumnType("int(11)");
 
                 entity.Property(e => e.TipoAtendimento)
                     .IsRequired()
@@ -70,6 +64,12 @@ namespace Core
                     .HasForeignKey(d => d.IdPessoa)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Atendimento_Pessoa1");
+
+                entity.HasOne(d => d.IdServicoNavigation)
+                    .WithMany(p => p.Agendamentos)
+                    .HasForeignKey(d => d.IdServico)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("fk_Agendamento_Servico1");
             });
 
             modelBuilder.Entity<Agendaservico>(entity =>
@@ -78,16 +78,16 @@ namespace Core
 
                 entity.HasIndex(e => e.IdServico, "fk_AgendaServico_Servico1_idx");
 
-                entity.Property(e => e.Id).HasColumnType("int(11)");
-
-                entity.Property(e => e.IdServico).HasColumnType("int(11)");
-
-                entity.Property(e => e.Vagas).HasColumnType("int(11)");
+                entity.HasOne(d => d.IdServicoNavigation)
+                    .WithMany(p => p.Agendaservicos)
+                    .HasForeignKey(d => d.IdServico)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("fk_AgendaServico_Servico1");
             });
 
             modelBuilder.Entity<Capitaniaconcurso>(entity =>
             {
-                entity.HasKey(e => new { e.IdCapitania, e.IdConcurso })
+                entity.HasKey(e => new { e.Id, e.IdCapitania, e.IdConcurso })
                     .HasName("PRIMARY");
 
                 entity.ToTable("capitaniaconcurso");
@@ -96,9 +96,7 @@ namespace Core
 
                 entity.HasIndex(e => e.IdConcurso, "fk_Capitania_has_Concurso_Concurso1_idx");
 
-                entity.Property(e => e.IdCapitania).HasColumnType("int(11)");
-
-                entity.Property(e => e.IdConcurso).HasColumnType("int(11)");
+                entity.Property(e => e.CapitaniaConcursocol).HasMaxLength(50);
 
                 entity.HasOne(d => d.IdCapitaniaNavigation)
                     .WithMany(p => p.Capitaniaconcursos)
@@ -125,8 +123,6 @@ namespace Core
 
                 entity.HasIndex(e => e.Nome, "IDX_Nome");
 
-                entity.Property(e => e.Id).HasColumnType("int(11)");
-
                 entity.Property(e => e.Bairro)
                     .IsRequired()
                     .HasMaxLength(50);
@@ -147,8 +143,6 @@ namespace Core
                     .IsRequired()
                     .HasMaxLength(100);
 
-                entity.Property(e => e.Numero).HasColumnType("int(11)");
-
                 entity.Property(e => e.Rua)
                     .IsRequired()
                     .HasMaxLength(50);
@@ -165,8 +159,6 @@ namespace Core
                 entity.HasIndex(e => e.MetareaV, "IDX_MetareaV");
 
                 entity.HasIndex(e => e.IdCapitania, "fk_clima_capitania1_idx");
-
-                entity.Property(e => e.Id).HasColumnType("int(11)");
 
                 entity.Property(e => e.AlertaMar)
                     .IsRequired()
@@ -188,11 +180,15 @@ namespace Core
                     .IsRequired()
                     .HasMaxLength(500);
 
-                entity.Property(e => e.IdCapitania).HasColumnType("int(11)");
-
                 entity.Property(e => e.MetareaV)
                     .IsRequired()
                     .HasMaxLength(100);
+
+                entity.HasOne(d => d.IdCapitaniaNavigation)
+                    .WithMany(p => p.Climas)
+                    .HasForeignKey(d => d.IdCapitania)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("fk_clima_capitania1");
             });
 
             modelBuilder.Entity<Concurso>(entity =>
@@ -202,8 +198,6 @@ namespace Core
                 entity.HasIndex(e => e.Estado, "IDX_Estado");
 
                 entity.HasIndex(e => e.Nome, "IDX_Nome");
-
-                entity.Property(e => e.Id).HasColumnType("int(11)");
 
                 entity.Property(e => e.AreaTecnica)
                     .IsRequired()
@@ -222,8 +216,6 @@ namespace Core
                 entity.Property(e => e.DataInicialInscricao).HasColumnType("date");
 
                 entity.Property(e => e.DataProva).HasColumnType("date");
-
-                entity.Property(e => e.Edital).HasColumnType("int(11)");
 
                 entity.Property(e => e.Escolaridade)
                     .IsRequired()
@@ -248,8 +240,6 @@ namespace Core
                     .HasMaxLength(100);
 
                 entity.Property(e => e.Turma).HasMaxLength(10);
-
-                entity.Property(e => e.Vagas).HasColumnType("int(11)");
             });
 
             modelBuilder.Entity<Curso>(entity =>
@@ -261,8 +251,6 @@ namespace Core
                 entity.HasIndex(e => e.Nome, "IDX_Nome");
 
                 entity.HasIndex(e => e.IdCapitania, "fk_Curso_Capitania1_idx");
-
-                entity.Property(e => e.Id).HasColumnType("int(11)");
 
                 entity.Property(e => e.Cidade)
                     .IsRequired()
@@ -284,22 +272,24 @@ namespace Core
                     .IsRequired()
                     .HasMaxLength(2);
 
-                entity.Property(e => e.IdCapitania).HasColumnType("int(11)");
-
                 entity.Property(e => e.Nome)
                     .IsRequired()
                     .HasMaxLength(100);
 
-                entity.Property(e => e.QuantidadeVagas).HasColumnType("int(11)");
-
                 entity.Property(e => e.Requisitos)
                     .IsRequired()
                     .HasMaxLength(200);
+
+                entity.HasOne(d => d.IdCapitaniaNavigation)
+                    .WithMany(p => p.Cursos)
+                    .HasForeignKey(d => d.IdCapitania)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("fk_Curso_Capitania1");
             });
 
             modelBuilder.Entity<Inscricaoconcurso>(entity =>
             {
-                entity.HasKey(e => new { e.IdConcurso, e.IdPessoa })
+                entity.HasKey(e => new { e.Id, e.IdConcurso, e.IdPessoa })
                     .HasName("PRIMARY");
 
                 entity.ToTable("inscricaoconcurso");
@@ -307,10 +297,6 @@ namespace Core
                 entity.HasIndex(e => e.IdConcurso, "fk_Concurso_has_Pessoa_Concurso1_idx");
 
                 entity.HasIndex(e => e.IdPessoa, "fk_Concurso_has_Pessoa_Pessoa1_idx");
-
-                entity.Property(e => e.IdConcurso).HasColumnType("int(11)");
-
-                entity.Property(e => e.IdPessoa).HasColumnType("int(11)");
 
                 entity.Property(e => e.DataInscricao).HasColumnType("date");
 
@@ -332,9 +318,9 @@ namespace Core
                     .HasConstraintName("fk_Concurso_has_Pessoa_Pessoa1");
             });
 
-            modelBuilder.Entity<Inscricaocurso>(entity =>
+            modelBuilder.Entity<InscricaoCurso>(entity =>
             {
-                entity.HasKey(e => new { e.IdPessoa, e.IdCurso })
+                entity.HasKey(e => new { e.Id, e.IdPessoa, e.IdCurso })
                     .HasName("PRIMARY");
 
                 entity.ToTable("inscricaocurso");
@@ -342,10 +328,6 @@ namespace Core
                 entity.HasIndex(e => e.IdCurso, "fk_Pessoa_has_Curso_Curso1_idx");
 
                 entity.HasIndex(e => e.IdPessoa, "fk_Pessoa_has_Curso_Pessoa1_idx");
-
-                entity.Property(e => e.IdPessoa).HasColumnType("int(11)");
-
-                entity.Property(e => e.IdCurso).HasColumnType("int(11)");
 
                 entity.Property(e => e.DataInscricao).HasColumnType("date");
 
@@ -375,8 +357,6 @@ namespace Core
                     .IsUnique();
 
                 entity.HasIndex(e => e.Nome, "IDX_Nome");
-
-                entity.Property(e => e.Id).HasColumnType("int(11)");
 
                 entity.Property(e => e.Bairro)
                     .IsRequired()
@@ -426,13 +406,15 @@ namespace Core
 
                 entity.HasIndex(e => e.IdCapitania, "fk_Servico_Capitania1_idx");
 
-                entity.Property(e => e.Id).HasColumnType("int(11)");
-
                 entity.Property(e => e.Descricao)
                     .IsRequired()
                     .HasMaxLength(150);
 
-                entity.Property(e => e.IdCapitania).HasColumnType("int(11)");
+                entity.HasOne(d => d.IdCapitaniaNavigation)
+                    .WithMany(p => p.Servicos)
+                    .HasForeignKey(d => d.IdCapitania)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("fk_Servico_Capitania1");
             });
 
             OnModelCreatingPartial(modelBuilder);

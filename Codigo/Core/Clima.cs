@@ -17,5 +17,7 @@ namespace Core
         public DateTime HoraEmissao { get; set; }
         public DateTime Validade { get; set; }
         public int IdCapitania { get; set; }
+
+        public virtual Capitania IdCapitaniaNavigation { get; set; }
     }
 }

@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Core.Service
 {
-    internal interface IInscricaoCursoService
+    public interface IInscricaoCursoService
     {
-        int Create(Inscricaocurso inscricaocurso);
-        void Edit(Inscricaocurso inscricaocurso);
-        void Delete(int idInscricaocurso);
-        Inscricaocurso Get(int idInscricaocurso);
-        IEnumerable<Inscricaocurso> GetAll();
+        int Create(InscricaoCurso inscricaoCurso);
+        void Edit(InscricaoCurso inscricaoCurso);
+        void Delete(int idInscricaoCurso);
+        InscricaoCurso Get(int idInscricaoCurso);
+        IEnumerable<InscricaoCurso> GetAll();
     }
 }

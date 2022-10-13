@@ -7,6 +7,7 @@ namespace Core
 {
     public partial class Inscricaoconcurso
     {
+        public int Id { get; set; }
         public int IdConcurso { get; set; }
         public int IdPessoa { get; set; }
         public string Status { get; set; }
