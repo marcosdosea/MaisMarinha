@@ -20,6 +20,7 @@ namespace MaisMarinhaWeb
             builder.Services.AddTransient<IPessoaService, PessoaService>();
             builder.Services.AddTransient<IConcursoService, ConcursoService>();
             builder.Services.AddTransient<ICapitaniaService, CapitaniaService>();
+            builder.Services.AddTransient<IInscricaoCursoService, InscricaoCursoService>();
 
             builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
