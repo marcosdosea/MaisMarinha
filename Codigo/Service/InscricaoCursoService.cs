@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace Service
 {
-    internal class InscricaoCursoService : IInscricaoCursoService
+    public class InscricaoCursoService : IInscricaoCursoService
     {
         private readonly MaisMarinhaContext _context;
 
-        public InscricaoCursoService(MaisMarinhaContext context)
+        public InscricaoCursoService (MaisMarinhaContext context)
         {
             _context = context;
         }
@@ -36,8 +36,8 @@ namespace Service
         /// <param name="idInscricaoCurso"></param>
         public void Delete(int idInscricaoCurso)
         {
-            var _inscricaoCurso = _context.Pessoas.Find(idInscricaoCurso);
-            _context.Pessoas.Remove(_inscricaoCurso);
+            var _inscricaoCurso = _context.Inscricaocursos.Find(idInscricaoCurso);
+            _context.Inscricaocursos.Remove(_inscricaoCurso);
             _context.SaveChanges();
         }
 
