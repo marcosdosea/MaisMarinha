@@ -47,6 +47,7 @@ esse tópico será atualizado a medida que o projeto for prolongado, mas até o 
 
 #### Charles Costa
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/charlescosta1)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](http://linkedin.com/in/charlescosta1)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:charlescostapvd@gmail.com)
 
 #### Edmarques Costa
