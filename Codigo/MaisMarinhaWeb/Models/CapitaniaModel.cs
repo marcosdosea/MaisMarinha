@@ -54,13 +54,13 @@ namespace MaisMarinhaWeb.Models
 
         [Required(ErrorMessage = "Campo Hora Inicio é requerido")]
         [Display(Name = "Hora de Inicio")]
-        [DataType(DataType.Text)]
-        public DateTime HoraInicio { get; set; }
+        [DataType(DataType.Time)]
+        public DateTime HorarioInicio { get; set; }
 
         [Required(ErrorMessage = "Campo Hora Fim é requerido")]
         [Display(Name = "Hora Final")]
-        [DataType(DataType.Text)]
-        public DateTime HoraFim { get; set; }
+        [DataType(DataType.Time)]
+        public DateTime HorarioFim { get; set; }
 
     }
 }

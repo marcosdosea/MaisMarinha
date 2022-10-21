@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32106.194
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaisMarinhaWeb", "MaisMarinhaWeb\MaisMarinhaWeb.csproj", "{38D199B9-AB58-42FC-AD14-B4C51E29F466}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{7ABE0BA9-7055-4704-808E-F2982CA4FC4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{55224C8E-C20E-4400-8AE4-2E142A4F5476}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{55224C8E-C20E-4400-8AE4-2E142A4F5476}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaisMarinhaWebTests", "MaisMarinhaWebTests\MaisMarinhaWebTests.csproj", "{689A1835-5D28-4091-B593-155286F8A89D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{55224C8E-C20E-4400-8AE4-2E142A4F5476}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55224C8E-C20E-4400-8AE4-2E142A4F5476}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55224C8E-C20E-4400-8AE4-2E142A4F5476}.Release|Any CPU.Build.0 = Release|Any CPU
+		{689A1835-5D28-4091-B593-155286F8A89D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{689A1835-5D28-4091-B593-155286F8A89D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{689A1835-5D28-4091-B593-155286F8A89D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{689A1835-5D28-4091-B593-155286F8A89D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
