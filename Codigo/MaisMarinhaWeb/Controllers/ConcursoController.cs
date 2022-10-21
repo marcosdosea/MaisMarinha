@@ -86,7 +86,7 @@ namespace MaisMarinhaWeb.Controllers
         // POST: ConcursoController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(int id, ConcursoModel concursoModel)
         {
             _concursoService.Delete(id);
             return RedirectToAction(nameof(Index));
