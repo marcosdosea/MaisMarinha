@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Core.Service
 {
-    internal interface IInscricaoConcursoService
+    public interface IInscricaoConcursoService
     {
         int Create(Inscricaoconcurso inscricaoconcurso);
         void Edit(Inscricaoconcurso inscricaoconcurso);
