@@ -16,3 +16,19 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.remove-anchor {
+    text-decoration: none;
+}
+
+.align-div-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-headline{
+    justify-content: center;
+}
+

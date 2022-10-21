@@ -21,29 +21,32 @@
     <link rel="stylesheet" href="~/MaisMarinhaWeb.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MaisMarinhaWeb</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Pessoa" asp-action="Index">Pessoa</a>
-                        </li>
-                    </ul>
+    <header class="br-header bg-primary-darken-02">
+        <div class="container-lg">
+            <div class="header-top">
+                <div class="header-logo">
+                    <a class="remove-anchor" asp-area="" asp-controller="Home" asp-action="Index"><h1 class="primary mr-3">+Marinha</h1></a>
+                </div>
+
+                <div class="header-actions">
+                    <div class="header-info">
+                        <a class="br-button mr-3" asp-area="" asp-controller="Curso" asp-action="Index">Cursos</a>
+                        <a class="br-button mr-3" asp-area="" asp-controller="Concurso" asp-action="Index">Concursos</a>
+                        <a class="br-button mr-3" asp-area="" asp-controller="" asp-action="">Serviços</a>
+                        <a class="br-button mr-3" asp-area="" asp-controller="Capitania" asp-action="Index">Capitanias</a>
+                        <a class="br-button mr-3" asp-area="" asp-controller="" asp-action="">Dados Metereológicos</a>
+                    </div>
+                    <div class="header-login">
+                        <div class="header-sign-in">
+                            <button class="br-button circle primary inverted" type="button" data-trigger="">
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="header-avatar"></div>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
     <div class="container">
         <main role="main" class="pb-3">
