@@ -61,6 +61,5 @@ namespace MaisMarinhaWeb.Models
         [Display(Name = "Hora Final")]
         [DataType(DataType.Time)]
         public DateTime HorarioFim { get; set; }
-
     }
 }
