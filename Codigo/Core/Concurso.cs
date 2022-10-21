@@ -10,6 +10,7 @@ namespace Core
         public Concurso()
         {
             Capitaniaconcursos = new HashSet<Capitaniaconcurso>();
+            Inscricaoconcursos = new HashSet<Inscricaoconcurso>();
         }
 
         public int Id { get; set; }
