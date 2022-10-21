@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaisMarinhaWebTests", "MaisMarinhaWebTests\MaisMarinhaWebTests.csproj", "{B6C6D6AA-B574-4DC5-9CD9-CDF7D25CEC8B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceTests", "ServiceTests\ServiceTests.csproj", "{7B8F38B7-E1D9-4840-8171-040A2D71A00B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,10 +35,15 @@ Global
 		{B6C6D6AA-B574-4DC5-9CD9-CDF7D25CEC8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6C6D6AA-B574-4DC5-9CD9-CDF7D25CEC8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6C6D6AA-B574-4DC5-9CD9-CDF7D25CEC8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B8F38B7-E1D9-4840-8171-040A2D71A00B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B8F38B7-E1D9-4840-8171-040A2D71A00B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B8F38B7-E1D9-4840-8171-040A2D71A00B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B8F38B7-E1D9-4840-8171-040A2D71A00B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F1B83F23-9BAB-470B-B449-AF71B62FACDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F1B83F23-9BAB-470B-B449-AF71B62FACDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1B83F23-9BAB-470B-B449-AF71B62FACDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1B83F23-9BAB-470B-B449-AF71B62FACDD}.Release|Any CPU.Build.0 = Release|Any CPU
+
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
