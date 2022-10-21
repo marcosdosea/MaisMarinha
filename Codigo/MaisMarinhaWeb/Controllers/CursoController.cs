@@ -85,7 +85,7 @@ namespace MaisMarinhaWeb.Controllers
         // POST: CursoController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(int id, CursoModel cursoModel)
         {
             _cursoService.Delete(id);
             return RedirectToAction(nameof(Index));
