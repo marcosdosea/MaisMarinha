@@ -25,10 +25,27 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
+}
+
+.align-div-spacearound {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .create-headline{
     justify-content: center;
+}
+
+.expand-form-area{
+    height: 40%;
+    width: 100vw;
+    margin: 0;
+}
+
+.use-all-width{
+    width:100%;
 }
 
