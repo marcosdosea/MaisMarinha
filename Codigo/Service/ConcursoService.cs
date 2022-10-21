@@ -1,4 +1,5 @@
 ﻿using Core;
+using Core.DTO;
 using Core.Service;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -63,6 +64,23 @@ namespace Service
         public IEnumerable<Concurso> GetAll()
         {
             return _context.Concursos.AsNoTracking();
+        }
+
+        public IEnumerable<ConcursoDTO> GetByNome(string nome)
+        {
+            var query = from concurso in _context.Concursos
+                        where concurso.Nome.StartsWith(nome)
+                        orderby concurso.Nome
+                        select new ConcursoDTO
+                        {
+                            Id = concurso.Id,
+                            Nome = concurso.Nome,
+                            DataInicialInscricao = concurso.DataInicialInscricao,
+                            DataFinalInscricao = concurso.DataFinalInscricao,
+                            DataProva = concurso.DataProva,
+                            Escolaridade = concurso.Escolaridade
+                        };
+            return query;
         }
     }
 }
