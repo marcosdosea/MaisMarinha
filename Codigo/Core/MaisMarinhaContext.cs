@@ -150,6 +150,10 @@ namespace Core
                 entity.Property(e => e.Telefone)
                     .IsRequired()
                     .HasMaxLength(20);
+                entity.Property(e => e.HorarioInicio).HasColumnType("date");
+
+                entity.Property(e => e.HorarioFim).HasColumnType("date");
+
             });
 
             modelBuilder.Entity<Clima>(entity =>
