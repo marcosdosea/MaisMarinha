@@ -88,7 +88,8 @@ namespace MaisMarinhaWeb.Controllers
         // POST: CapitaniaController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(int id, CapitaniaModel capitaniaModel)
+
         {
             _capitaniaService.Delete(id);
             return RedirectToAction(nameof(Index));

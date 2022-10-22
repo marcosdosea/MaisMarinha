@@ -69,8 +69,8 @@ namespace MaisMarinhaWeb.Controllers.Tests
             Assert.AreEqual(752, capitaniaModel.Numero);
             Assert.AreEqual("Área FOXTROT", capitaniaModel.MetareaV);
             Assert.AreEqual("(79) 3711-1646", capitaniaModel.Telefone);
-            Assert.AreEqual(DateTime.Parse("2022-04-23 00:00:00"), capitaniaModel.HorarioInicio);
-            Assert.AreEqual(DateTime.Parse("2022-04-24 00:01:00"), capitaniaModel.HorarioFim);
+            Assert.AreEqual(DateTime.Parse("2022/04/23 00:00:00"), capitaniaModel.HorarioInicio);
+            Assert.AreEqual(DateTime.Parse("2022/04/24 00:01:00"), capitaniaModel.HorarioFim);
 
 
 
@@ -180,7 +180,7 @@ namespace MaisMarinhaWeb.Controllers.Tests
         public void DeleteTest_Get()
         {
             // Act
-            var result = controller.Delete(GetTargetCapitaniaModel().Id);
+            var result = controller.Delete(GetTargetCapitaniaModel().Id, GetTargetCapitaniaModel());
 
             // Assert
             Assert.IsInstanceOfType(result, typeof(RedirectToActionResult));
