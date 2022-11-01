@@ -1,8 +1,9 @@
 ﻿@model IEnumerable<MaisMarinhaWeb.Models.ConcursoModel>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Concursos";
 }
+<link rel="stylesheet" type="text/css" href="~/lib/datatable/css/jquery.dataTables.min.css" />
 
 <h1 class="mt-3 mb-3">Concursos</h1>
 
@@ -10,29 +11,16 @@
     <a class="br-button primary mt-3 mb-3" asp-action="Create">Adicionar Novo</a>
 </p>
 
-<div class="col-sm-10 col-lg-7 mb-3">
-    <div class="br-input input-inline input-button">
-        <div class="input-label mt-2">
-            <label class="text-nowrap" for="input-button"><p>Consultar Concurso:</p></label>
-        </div>
-        <div class="input-content">
-            <input id="input-button" type="text" placeholder="" />
-            <button class="br-button" type="button" aria-label="Botão de ação">
-                <i class="fa fa-search mt-2" aria-hidden="true"></i>
-            </button>
-        </div>
-    </div>
-</div>
 
-<table class="table mt-3">
+<table id="tableConcurso" class="table mt-3">
     <thead>
         <tr>
-            <th class="border-right" rowspan="1" scope="col">@Html.DisplayNameFor(model => model.Nome)</th>
-            <th class="border-right" colspan="1" scope="col">@Html.DisplayNameFor(model => model.DataInicialInscricao)</th>
-            <th class="border-right" colspan="1" scope="col">@Html.DisplayNameFor(model => model.DataFinalInscricao)</th>
-            <th class="border-right" colspan="1" scope="col">@Html.DisplayNameFor(model => model.DataProva)</th>
-            <th class="border-right" colspan="1" scope="col">@Html.DisplayNameFor(model => model.Escolaridade)</th>
-            <th class="" colspan="2" scope="col">Opções</th>
+            <th>@Html.DisplayNameFor(model => model.Nome)</th>
+            <th>@Html.DisplayNameFor(model => model.DataInicialInscricao)</th>
+            <th>@Html.DisplayNameFor(model => model.DataFinalInscricao)</th>
+            <th>@Html.DisplayNameFor(model => model.DataProva)</th>
+            <th>@Html.DisplayNameFor(model => model.Escolaridade)</th>
+            <th>Opções</th>
         </tr>
     </thead>
     <tbody>
@@ -56,9 +44,7 @@
                 </td>
                 <td>
                     <i class="fas fa-edit"></i>
-                    @Html.ActionLink("Editar", "Edit", new {  id=item.Id  })
-                </td>
-                <td>
+                    @Html.ActionLink("Detalhes", "Details", new {  id=item.Id  })
                     <i class="fas fa-trash-alt"></i>
                     @Html.ActionLink("Deletar", "Delete", new {  id=item.Id  })
                 </td>
@@ -66,3 +52,18 @@
         }
     </tbody>
 </table>
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#tableConcurso').DataTable({
+                language: {
+                    url: '/lib/datatable/js/pt-BR.json'
+                }
+            });
+        });
+    </script>
+
+    <script src="~/lib/datatable/js/jquery.dataTables.min.js"></script>
+}
