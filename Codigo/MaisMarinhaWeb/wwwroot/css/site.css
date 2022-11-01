@@ -49,3 +49,19 @@ body {
     width:100%;
 }
 
+@media (min-width: 320px) and (max-width: 768px) {
+    .menu-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-mobile-showup {
+        display: none;
+    }
+
+    .reduce-width {
+        width: 40px;
+    }
+}
+
