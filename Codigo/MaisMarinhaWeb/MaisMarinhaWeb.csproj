@@ -24,4 +24,6 @@
     <Folder Include="wwwroot\assets\" />
   </ItemGroup>
 
+  <ProjectExtensions><VisualStudio><UserProperties libman_1json__JsonSchema="https://json.schemastore.org/libman.json" /></VisualStudio></ProjectExtensions>
+
 </Project>
