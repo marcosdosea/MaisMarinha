@@ -2,6 +2,8 @@ using Core;
 using Core.Service;
 using Microsoft.EntityFrameworkCore;
 using Service;
+using Microsoft.AspNetCore.Identity;
+using MaisMarinhaWeb.Areas.Identity.Data;
 
 namespace MaisMarinhaWeb
 {
@@ -10,12 +12,19 @@ namespace MaisMarinhaWeb
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+                        //var connectionString = builder.Configuration.GetConnectionString("MaisMarinhaConnection") ?? throw new InvalidOperationException("Connection string 'MaisMarinhaConnection' not found.");
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
             builder.Services.AddDbContext<MaisMarinhaContext>(
                 options => options.UseMySQL("server=localhost;port=3306;user=root;password=123456;database=maismarinha"));
+                
+
+            /* 
+            builder.Services.AddDefaultIdentity<UsuarioIdentity>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<IdentityContext>();
+            */
             builder.Services.AddTransient<ICursoService, CursoService>();
             builder.Services.AddTransient<IPessoaService, PessoaService>();
             builder.Services.AddTransient<IConcursoService, ConcursoService>();
@@ -38,7 +47,8 @@ namespace MaisMarinhaWeb
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(
