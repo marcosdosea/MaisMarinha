@@ -1,15 +1,17 @@
 ﻿@model IEnumerable<MaisMarinhaWeb.Models.CapitaniaModel>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Capitanias";
 }
+    <link rel="stylesheet" type="text/css" href="~/lib/datatable/css/jquery.dataTables.min.css" />
 
-<h1>Index</h1>
+<h1 class="mt-3 mb-3">Capitanias</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="br-button primary mt-3 mb-3" asp-action="Create">Adicionar Novo</a>
 </p>
-<table class="table">
+
+<table id="tableCapitania" class="table mt-3">
     <thead>
         <tr>
             <th>
@@ -93,3 +95,17 @@
 }
     </tbody>
 </table>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#tableCapitania').DataTable({
+                language: {
+                    url: '/lib/datatable/js/pt-BR.json'
+                }
+            });
+        });
+    </script>
+
+    <script src="~/lib/datatable/js/jquery.dataTables.min.js"></script>
+}
