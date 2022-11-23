@@ -25,8 +25,8 @@
         <div class="container-lg">
             <div class="header-top">
                 <!--Logo +Marinha-->
-                <div class="header-logo">
-                    <a class="remove-anchor" asp-area="" asp-controller="Home" asp-action="Index"><h1 class="primary mr-3">+Marinha</h1></a>
+                <div class=" header-logo">
+                    <a class=" remove-anchor" asp-area="" asp-controller="Home" asp-action="Index"><h1 class="primary mr-3">+Marinha</h1></a>
                 </div>
 
                 <!--Menu Desktop (Flex-Row)-->
@@ -48,20 +48,12 @@
                         <li class="menu-mobile nav-item">
                             <a class="menu-mobile nav-link text-light mr-1" asp-area="" asp-controller="" asp-action="">Dados Metereológicos</a>
                         </li>
-                        <!--
-                       
-                        <partial name="_LoginPartial" /> 
-                        
-                        -->
 
-                        <li class="menu-mobile nav-item">
-                            <button class="br-button circle primary inverted" type="button" data-trigger="">
-                                <i class="fas fa-user" aria-hidden="true"></i>
-                            </button>
-                        </li>
+                        <partial name="_LoginPartial" />
+
                     </ul>
                 </div>
-                
+
                 <!--Menu Mobile (Sanduiche)-->
                 <div class="row menu-mobile-showup mr-0">
                     <div class="br-menu" id="main-navigation">
@@ -69,7 +61,7 @@
                             <div class="menu-panel bg-primary-darken-02">
                                 <div class="menu-header ">
                                     <div class="menu-title ">
-                                        <h1 class="primary mr-3">+Marinha</h1>                              
+                                        <h1 class="primary mr-3">+Marinha</h1>
                                     </div>
                                     <div class="menu-close">
                                         <button class="br-button circle" type="button" aria-label="Fechar o menu" data-dismiss="menu">
@@ -84,6 +76,7 @@
                                     <a class="menu-item nav-link text-light mr-1 divider" href="javascript: void(0)"><p class="primary mb-0">Serviços</p></a>
                                     <a class="menu-item nav-link text-light mr-1 divider" href="/capitania"><p class="primary mb-0">Capitanias</p></a>
                                     <a class="menu-item nav-link text-light mr-1 divider" href="javascript: void(0)"><p class="primary mb-0">Dados Metereológicos</p></a>
+                                    <partial name="_LoginMobilePartial" />
                                 </nav>
                                 <div class="menu-footer">
                                     <div class="menu-info">
@@ -105,13 +98,13 @@
                                     <i class="fas fa-bars" aria-hidden="true"></i>
                                 </button>
                             </div>
-                            <!--Acionar menu-->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
