@@ -13,10 +13,6 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
-}
-
 .remove-anchor {
     text-decoration: none;
 }
