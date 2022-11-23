@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - MaisMarinhaWeb</title>
+    <title>+Marinha - @ViewData["Title"]</title>
     <!-- Font Rawline-->
     <link rel="stylesheet"
           href="https://cdngovbr-ds.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css" />
@@ -118,9 +118,69 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top br-footer">
         <div class="container">
-            &copy; 2022 - MaisMarinhaWeb - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="footer-logo">
+                <a class="remove-anchor" asp-area="" asp-controller="Home" asp-action="Index"><h2 class="primary mr-3">+Marinha</h2></a>
+            </div>
+            <div class="br-list horizontal" data-toggle="data-toggle" data-sub="data-sub">
+                <div class="col-2">
+                    <a class="br-item header remove-anchor text-bold text-uppercase text-light mr-1" href="javascript:void(0)">
+                        <div class="content">Fale Conosco</div>
+                        <div class="support">
+                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                    <div class="br-list">
+                        <span class="br-divider d-md-none"></span>
+                        <a class="br-item remove-anchor text-light mr-1" href="javascript:void(0)">
+                            <div class="content">Enviar um e-mail</div>
+                        </a>
+                        <a class="br-item remove-anchor text-light mr-1" href="javascript:void(0)">
+                            <div class="content">Números para contato</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <a class="br-item header remove-anchor text-bold text-uppercase text-light mr-1" href="javascript:void(0)">
+                        <div class="content text-bold text-uppercase">Acompanhe o Desenvolvimento</div>
+                        <div class="support">
+                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                    <div class="br-list">
+                        <span class="br-divider d-md-none"></span>
+                        <a class="br-item remove-anchor text-light mr-1" href="https://github.com/marcosdosea/MaisMarinha" target="_blank">
+                            <div class="content">Quer contribuir com o +Marinha?</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-sm-block">
+                <div class="row align-items-end justify-content-between py-5">
+                    <div class="col social-network">
+                        <p class="text-bold text-uppercase">Redes Sociais</p>
+                        <a class="back-none remove-anchor">
+                            <i class="text-light fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a class="ms-3 back-none remove-anchor">
+                            <i class="text-light fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a class="ms-3 back-none remove-anchor">
+                            <i class="text-light fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a class="ms-3 back-none remove-anchor">
+                            <i class="text-light fab fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div><span class="br-divider my-3"></span>
+        <div class="info">
+            <div class="text-down-01 text-medium pb-3">
+                &copy;
+                2022 - MaisMarinha - <a class="back-none" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
         </div>
     </footer>
     <!-- Scripts de componentes -->
