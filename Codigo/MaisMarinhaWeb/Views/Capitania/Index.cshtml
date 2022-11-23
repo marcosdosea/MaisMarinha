@@ -87,10 +87,11 @@
                 @Html.DisplayFor(modelItem => item.HorarioFim)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.Id  }) |
-                @Html.ActionLink("Details", "Details", new {  id=item.Id  }) |
-                @Html.ActionLink("Delete", "Delete", new {  id=item.Id  })
-            </td>
+                    <i class="fas fa-edit"></i>
+                    @Html.ActionLink("Detalhes", "Details", new {  id=item.Id  })
+                    <i class="fas fa-trash-alt"></i>
+                    @Html.ActionLink("Deletar", "Delete", new {  id=item.Id  })
+             </td>
         </tr>
 }
     </tbody>

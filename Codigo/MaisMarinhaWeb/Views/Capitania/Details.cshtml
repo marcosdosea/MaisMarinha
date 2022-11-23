@@ -4,11 +4,18 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<div class="mt-3 mb-3">
+    <a class="br-button primary mr-5" asp-action="Index"><i class="fas fa-chevron-left"></i>Voltar</a>
+    @Html.ActionLink("Editar", "Edit", new {  id = Model.Id},new {@class="br-button primary"})
+</div>
+
+<div class="align-div-center mb-3">
+    <h1 class="create-headline">Capitania @Html.DisplayFor(model => model.Nome)</h1>
+</div>
+<hr />
 
 <div>
-    <h4>CapitaniaModel</h4>
-    <hr />
+
     <dl class="row">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Id)
@@ -77,8 +84,3 @@
             @Html.DisplayFor(model => model.HorarioFim)
         </dd>
     </dl>
-</div>
-<div>
-    @Html.ActionLink("Edit", "Edit", new {  id = Model.Id  }) |
-    <a asp-action="Index">Back to List</a>
-</div>
