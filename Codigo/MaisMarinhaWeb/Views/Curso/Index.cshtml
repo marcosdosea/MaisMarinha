@@ -4,12 +4,15 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<link rel="stylesheet" type="text/css" href="~/lib/datatable/css/jquery.dataTables.min.css" />
+
+<h1 class="mt-3 mb-3">Cursos</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="br-button primary mt-3 mb-3" asp-action="Create">Adicionar Novo</a>
 </p>
-<table class="table">
+
+<table id="tableCurso" class="table mt-3">
     <thead>
         <tr>
             <th>
@@ -34,21 +37,11 @@
                 @Html.DisplayNameFor(model => model.Cidade)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Requisitos)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.DataInicioInscricao)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.DataFimInscricao)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Duracao)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdCapitania)
-            </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -76,26 +69,33 @@
                 @Html.DisplayFor(modelItem => item.Cidade)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Requisitos)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.DataInicioInscricao)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.DataFimInscricao)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Duracao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdCapitania)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
+                <td>
+                    <i class="fas fa-edit"></i>
+                    @Html.ActionLink("Detalhes", "Details", new {  id=item.Id  })
+                    <i class="fas fa-trash-alt"></i>
+                    @Html.ActionLink("Deletar", "Delete", new {  id=item.Id  })
+                </td>
+
         </tr>
 }
     </tbody>
 </table>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#tableCurso').DataTable({
+                language: {
+                    url: '/lib/datatable/js/pt-BR.json'
+                }
+            });
+        });
+    </script>
+
+    <script src="~/lib/datatable/js/jquery.dataTables.min.js"></script>
+}
