@@ -35,15 +35,15 @@ namespace Service.Tests
                     Id = 1,
                     Nome = "Concurso Marinheiro",
                     Edital = 1,
-                    DataInicialInscricao = DateTime.Parse("1892-10-27"),
-                    DataFinalInscricao = DateTime.Parse("1892-10-29"),
-                    DataProva = DateTime.Parse("1892-10-31"),
+                    DataInicialInscricao = DateTime.Parse("2023-03-03"),
+                    DataFinalInscricao = DateTime.Parse("2023-03-20"),
+                    DataProva = DateTime.Parse("2023-03-31"),
                     Estado = "SE",
-                    Cidade = "Itabaiana",
+                    Cidade = "Lagarto",
                     Vagas = 50,
                     Escolaridade = "EM",
                     Etapas = "3",
-                    AreaTecnica = "Engneharia",
+                    AreaTecnica = "Engenharia",
                     LocalInscricao = "Capitania dos portos de sergipe",
                     ValorInscricao = 50.00F,
                     LocalProva = "Aracaju",
@@ -60,7 +60,7 @@ namespace Service.Tests
                     DataProva = DateTime.Parse("1892-10-31"),
                     Estado = "SE",
                     Cidade = "Aracaju",
-                    Vagas = 20,
+                    Vagas = 10,
                     Escolaridade = "ES",
                     Etapas = "2",
                     AreaTecnica = "Exercito",
@@ -180,15 +180,15 @@ namespace Service.Tests
             Assert.IsNotNull(concurso);
             Assert.AreEqual("Concurso Marinheiro", concurso.Nome);
             Assert.AreEqual(1, concurso.Edital);
-            Assert.AreEqual(DateTime.Parse("1892-10-27"), concurso.DataInicialInscricao);
-            Assert.AreEqual(DateTime.Parse("1892-10-29"), concurso.DataFinalInscricao);
-            Assert.AreEqual(DateTime.Parse("1892-10-31"), concurso.DataProva);
+            Assert.AreEqual(DateTime.Parse("2023-03-03"), concurso.DataInicialInscricao);
+            Assert.AreEqual(DateTime.Parse("2023-03-20"), concurso.DataFinalInscricao);
+            Assert.AreEqual(DateTime.Parse("2023-03-31"), concurso.DataProva);
             Assert.AreEqual("SE", concurso.Estado);
-            Assert.AreEqual("Itabaiana", concurso.Cidade);
+            Assert.AreEqual("Lagarto", concurso.Cidade);
             Assert.AreEqual(50, concurso.Vagas);
             Assert.AreEqual("EM", concurso.Escolaridade);
             Assert.AreEqual("3", concurso.Etapas);
-            Assert.AreEqual("Engneharia", concurso.AreaTecnica);
+            Assert.AreEqual("Engenharia", concurso.AreaTecnica);
             Assert.AreEqual("Capitania dos portos de sergipe", concurso.LocalInscricao);
             Assert.AreEqual(50.00F, concurso.ValorInscricao);
             Assert.AreEqual("Aracaju", concurso.LocalProva);
