@@ -28,50 +28,52 @@ namespace Service.Tests
             _context.Database.EnsureDeleted();
             _context.Database.EnsureCreated();
             var capitanias = new List<Capitania>
+            {
+                new Capitania 
                 {
-                    new Capitania {
-                                        Id = 1,
-                Nome = "Capitania dos Portos de Sergipe",
-                Estado = "SE",
-                Cidade = "Aracaju",
-                Bairro = "São José",
-                Rua = "Av. Ivo do Prado",
-                Numero = 752,
-                MetareaV = "Área FOXTROT",
-                Telefone = "(79) 3711-1646",
-                HorarioInicio = DateTime.Parse("2022/04/23 00:00:00"),
-                HorarioFim = DateTime.Parse("2022/04/24 00:01:00")
-
-                                   },
-                    new Capitania {
-
-                                        Id = 2,
-                Nome = "Capitania dos Portos do Rio de Janeiro",
-                Estado = "RJ",
-                Cidade = "Rio de Janeiro",
-                Bairro = "Enseado do Suá",
-                Rua = "Rua Belmiro Rodrigues da Silva",
-                Numero = 145,
-                MetareaV = "Área CHARLIE",
-                Telefone = "(21) 2104-5319",
-                HorarioInicio = DateTime.Parse("2022/04/23 00:00:00"),
-                HorarioFim = DateTime.Parse("2022/04/24 00:01:00")
-                                    },
-                    new Capitania {
-
-                                        Id = 3,
-                Nome = "Capitania dos Portos de Minas Gerais",
-                Estado = "MG",
-                Cidade = "Belo Horizonte",
-                Bairro = "Jardim",
-                Rua = "Av. Raja Gabaglia",
-                Numero = 303,
-                MetareaV = "Área BRAVO",
-                Telefone = "(31) 3567-0769",
-                HorarioInicio = DateTime.Parse("2022/04/23 00:00:00"),
-                HorarioFim = DateTime.Parse("2022/04/24 00:01:00")
-                    },
-                };
+                    Id = 1,
+                    Nome = "Capitania dos Portos de Sergipe",
+                    Estado = "SE",
+                    Cidade = "Aracaju",
+                    Bairro = "São José",
+                    Rua = "Av. Ivo do Prado",
+                    Numero = 752,
+                    MetareaV = "Área FOXTROT",
+                    Telefone = "(79) 3711-1646",
+                    HorarioInicio = DateTime.Parse("2023/03/03 00:00:00"),
+                    HorarioFim = DateTime.Parse("2023/03/03 00:01:00")
+                },
+                
+                new Capitania 
+                {
+                    Id = 2,
+                    Nome = "Capitania dos Portos do Rio de Janeiro",
+                    Estado = "RJ",
+                    Cidade = "Rio de Janeiro",
+                    Bairro = "Enseado do Suá",
+                    Rua = "Rua Belmiro Rodrigues da Silva",
+                    Numero = 145,
+                    MetareaV = "Área CHARLIE",
+                    Telefone = "(21) 2104-5319",
+                    HorarioInicio = DateTime.Parse("2023/03/03 00:00:00"),
+                    HorarioFim = DateTime.Parse("2023/03/03 00:01:00")
+                },
+                
+                new Capitania 
+                {
+                    Id = 3,
+                    Nome = "Capitania dos Portos de Minas Gerais",
+                    Estado = "MG",
+                    Cidade = "Belo Horizonte",
+                    Bairro = "Jardim",
+                    Rua = "Av. Raja Gabaglia",
+                    Numero = 303,
+                    MetareaV = "Área BRAVO",
+                    Telefone = "(31) 3567-0769",
+                    HorarioInicio = DateTime.Parse("2023/03/03 00:00:00"),
+                    HorarioFim = DateTime.Parse("2023/03/03 00:01:00")
+                }
+            };
 
             _context.AddRange(capitanias);
             _context.SaveChanges();
@@ -94,8 +96,8 @@ namespace Service.Tests
                 Numero = 400,
                 MetareaV = "Área ALFA",
                 Telefone = "(75) 3411-1646",
-                HorarioInicio = DateTime.Parse("2022/04/23 00:00:00"),
-                HorarioFim = DateTime.Parse("2022/04/24 00:01:00")
+                HorarioInicio = DateTime.Parse("2023/03/03 00:00:00"),
+                HorarioFim = DateTime.Parse("2023/03/04 00:01:00")
             });
             // Assert
             Assert.AreEqual(4, _capitaniaService.GetAll().Count());
@@ -108,8 +110,8 @@ namespace Service.Tests
             Assert.AreEqual(400, capitania.Numero);
             Assert.AreEqual("Área ALFA", capitania.MetareaV);
             Assert.AreEqual("(75) 3411-1646", capitania.Telefone);
-            Assert.AreEqual(DateTime.Parse("2022/04/23 00:00:00"), capitania.HorarioInicio);
-            Assert.AreEqual(DateTime.Parse("2022/04/24 00:01:00"), capitania.HorarioFim);
+            Assert.AreEqual(DateTime.Parse("2023/03/03 00:00:00"), capitania.HorarioInicio);
+            Assert.AreEqual(DateTime.Parse("2023/03/04 00:01:00"), capitania.HorarioFim);
 
         }
 
@@ -161,8 +163,8 @@ namespace Service.Tests
             Assert.AreEqual(752, capitania.Numero);
             Assert.AreEqual("Área FOXTROT", capitania.MetareaV);
             Assert.AreEqual("(79) 3711-1646", capitania.Telefone);
-            Assert.AreEqual(DateTime.Parse("2022/04/23 00:00:00"), capitania.HorarioInicio);
-            Assert.AreEqual(DateTime.Parse("2022/04/24 00:01:00"), capitania.HorarioFim);
+            Assert.AreEqual(DateTime.Parse("2023/03/03 00:00:00"), capitania.HorarioInicio);
+            Assert.AreEqual(DateTime.Parse("2023/03/04 00:01:00"), capitania.HorarioFim);
 
         }
         public void GetAllTest()
@@ -174,7 +176,7 @@ namespace Service.Tests
             Assert.IsNotNull(listaCapitanias);
             Assert.AreEqual(3, listaCapitanias.Count());
             Assert.AreEqual(1, listaCapitanias.First().Id);
-            Assert.AreEqual("Capitania dos Portos de Sergipe", listaCapitanias.First().Nome);
+            Assert.AreEqual("Capitania dos Portos de Minas Gerais", listaCapitanias.First().Nome);
         }
 
     }
