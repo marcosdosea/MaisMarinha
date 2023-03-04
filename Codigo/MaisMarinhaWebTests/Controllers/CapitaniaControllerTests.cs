@@ -48,7 +48,6 @@ namespace MaisMarinhaWeb.Controllers.Tests
 
             List<CapitaniaModel>? lista = (List<CapitaniaModel>)viewResult.ViewData.Model;
             Assert.AreEqual(2, lista.Count);
-
         }
 
         [TestMethod()]
@@ -69,11 +68,8 @@ namespace MaisMarinhaWeb.Controllers.Tests
             Assert.AreEqual(752, capitaniaModel.Numero);
             Assert.AreEqual("Área FOXTROT", capitaniaModel.MetareaV);
             Assert.AreEqual("(79) 3711-1646", capitaniaModel.Telefone);
-            Assert.AreEqual(DateTime.Parse("2022/04/23 00:00:00"), capitaniaModel.HorarioInicio);
-            Assert.AreEqual(DateTime.Parse("2022/04/24 00:01:00"), capitaniaModel.HorarioFim);
-
-
-
+            Assert.AreEqual(DateTime.Parse("2023/03/03 00:00:00"), capitaniaModel.HorarioInicio);
+            Assert.AreEqual(DateTime.Parse("2023/03/04 00:01:00"), capitaniaModel.HorarioFim);
         }
 
         [TestMethod()]
@@ -172,8 +168,8 @@ namespace MaisMarinhaWeb.Controllers.Tests
             Assert.AreEqual(752, capitaniaModel.Numero);
             Assert.AreEqual("Área FOXTROT", capitaniaModel.MetareaV);
             Assert.AreEqual("(79) 3711-1646", capitaniaModel.Telefone);
-            Assert.AreEqual(DateTime.Parse("2022/04/23 00:00:00"), capitaniaModel.HorarioInicio);
-            Assert.AreEqual(DateTime.Parse("2022/04/24 00:01:00"), capitaniaModel.HorarioFim);
+            Assert.AreEqual(DateTime.Parse("2023/03/03 00:00:00"), capitaniaModel.HorarioInicio);
+            Assert.AreEqual(DateTime.Parse("2023/03/04 00:01:00"), capitaniaModel.HorarioFim);
         }
 
         [TestMethod()]
@@ -202,13 +198,10 @@ namespace MaisMarinhaWeb.Controllers.Tests
                 Numero = 752,
                 MetareaV = "Área FOXTROT",
                 Telefone = "(79) 3711-1646",
-                HorarioInicio = DateTime.Parse("2022/04/23 00:00:00"),
-                HorarioFim = DateTime.Parse("2022/04/24 00:01:00")
-
+                HorarioInicio = DateTime.Parse("2023/03/03 00:00:00"),
+                HorarioFim = DateTime.Parse("2023/03/03 00:01:00")
             };
-
         }
-
 
         private CapitaniaModel GetTargetCapitaniaModel()
         {
@@ -223,12 +216,11 @@ namespace MaisMarinhaWeb.Controllers.Tests
                 Numero = 752,
                 MetareaV = "Área FOXTROT",
                 Telefone = "(79) 3711-1646",
-                HorarioInicio = DateTime.Parse("2022/04/23 00:00:00"),
-                HorarioFim = DateTime.Parse("2022/04/24 00:01:00")
-
+                HorarioInicio = DateTime.Parse("2023/03/03 00:00:00"),
+                HorarioFim = DateTime.Parse("2023/03/04 00:01:00")
             };
-
         }
+
         private Capitania GetTargetCapitania()
         {
             return new Capitania
@@ -242,15 +234,10 @@ namespace MaisMarinhaWeb.Controllers.Tests
                 Numero = 752,
                 MetareaV = "Área FOXTROT",
                 Telefone = "(79) 3711-1646",
-                HorarioInicio = DateTime.Parse("2022/04/23 00:00:00"),
-                HorarioFim = DateTime.Parse("2022/04/24 00:01:00")
-
+                HorarioInicio = DateTime.Parse("2023/03/03 00:00:00"),
+                HorarioFim = DateTime.Parse("2023/03/04 00:01:00")
             };
-
         }
-
-
-
 
         private IEnumerable<Capitania> GetTestCapitania()
         {
@@ -267,8 +254,8 @@ namespace MaisMarinhaWeb.Controllers.Tests
                     Numero = 752,
                     MetareaV = "Área FOXTROT",
                     Telefone = "(79) 3711-1646",
-                    HorarioInicio = DateTime.Parse("2022/04/23 00:00:00"),
-                    HorarioFim = DateTime.Parse("2022/04/24 00:01:00")
+                    HorarioInicio = DateTime.Parse("2023/03/03 00:00:00"),
+                    HorarioFim = DateTime.Parse("2023/03/04 00:01:00")
                 },
 
                 {
@@ -282,12 +269,11 @@ namespace MaisMarinhaWeb.Controllers.Tests
                         Numero = 752,
                         MetareaV = "Área FOXTROT",
                         Telefone = "(79) 3711-1646",
-                        HorarioInicio = DateTime.Parse("2022/04/23 00:00:00"),
-                        HorarioFim = DateTime.Parse("2022/04/24 00:01:00")
+                        HorarioInicio = DateTime.Parse("2023/03/03 00:00:00"),
+                        HorarioFim = DateTime.Parse("2023/03/04 00:01:00")
                     }
                 }
             };
-
         }
     }
 }
