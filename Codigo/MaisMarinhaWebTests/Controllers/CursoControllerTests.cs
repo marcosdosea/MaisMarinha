@@ -67,13 +67,14 @@ namespace MaisMarinhaWeb.Controllers.Tests
             Assert.IsInstanceOfType(viewResult.ViewData.Model, typeof(CursoModel));
             CursoModel cursoModel = (CursoModel)viewResult.ViewData.Model;
             Assert.AreEqual("Curso Aquaviário", cursoModel.Nome);
-            Assert.AreEqual(DateTime.Parse("05/12/2022 08:00:00"), cursoModel.DataInicial);
-            Assert.AreEqual(DateTime.Parse("16/12/2022 16:00:00"), cursoModel.DataFim);
-            Assert.AreEqual(10, cursoModel.QuantidadeVagas);
+            Assert.AreEqual(DateTime.Parse("05/03/2023 08:00:00"), cursoModel.DataInicial);
+            Assert.AreEqual(DateTime.Parse("16/03/2023 16:00:00"), cursoModel.DataFim);
+            Assert.AreEqual(50, cursoModel.QuantidadeVagas);
             Assert.AreEqual("SE", cursoModel.Estado);
             Assert.AreEqual("Aracaju", cursoModel.Cidade);
             Assert.AreEqual("Ensino médio completo", cursoModel.Requisitos);
-            Assert.AreEqual(DateTime.Parse("07/11/2022 00:01:00"), cursoModel.DataInicioInscricao);
+            Assert.AreEqual(DateTime.Parse("07/01/2023 00:01:00"), cursoModel.DataInicioInscricao);
+            Assert.AreEqual(DateTime.Parse("09/01/2023 17:00:00"), cursoModel.DataFimInscricao);
             Assert.AreEqual(1, cursoModel.IdCapitania);
         }
 
