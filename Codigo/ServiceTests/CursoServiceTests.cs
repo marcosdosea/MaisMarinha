@@ -35,14 +35,14 @@ namespace Service.Tests
                 {
                     Id = 1,
                     Nome = "Curso Aquaviário",
-                    DataInicial = DateTime.Parse("05/12/2022 08:00:00"),
-                    DataFim = DateTime.Parse("16/12/2022 16:00:00"),
-                    QuantidadeVagas = 10,
+                    DataInicial = DateTime.Parse("05/03/2023 08:00:00"),
+                    DataFim = DateTime.Parse("16/03/2023 16:00:00"),
+                    QuantidadeVagas = 50,
                     Estado = "SE",
                     Cidade = "Aracaju",
                     Requisitos = "Ensino médio completo",
-                    DataInicioInscricao = DateTime.Parse("07/11/2022 00:01:00"),
-                    DataFimInscricao = DateTime.Parse("09/12/2022 17:00:00"),
+                    DataInicioInscricao = DateTime.Parse("07/01/2023 00:01:00"),
+                    DataFimInscricao = DateTime.Parse("09/01/2023 17:00:00"),
                     IdCapitania = 1
                 },
                 new Curso
@@ -150,13 +150,14 @@ namespace Service.Tests
             // Assert
             Assert.IsNotNull(curso);
             Assert.AreEqual("Curso Aquaviário", curso.Nome);
-            Assert.AreEqual(DateTime.Parse("05/12/2022 08:00:00"), curso.DataInicial);
-            Assert.AreEqual(DateTime.Parse("16/12/2022 16:00:00"), curso.DataFim);
-            Assert.AreEqual(10, curso.QuantidadeVagas);
+            Assert.AreEqual(DateTime.Parse("05/03/2023 08:00:00"), curso.DataInicial);
+            Assert.AreEqual(DateTime.Parse("16/03/2023 16:00:00"), curso.DataFim);
+            Assert.AreEqual(50, curso.QuantidadeVagas);
             Assert.AreEqual("SE", curso.Estado);
             Assert.AreEqual("Aracaju", curso.Cidade);
             Assert.AreEqual("Ensino médio completo", curso.Requisitos);
-            Assert.AreEqual(DateTime.Parse("07/11/2022 00:01:00"), curso.DataInicioInscricao);
+            Assert.AreEqual(DateTime.Parse("07/01/2023 00:01:00"), curso.DataInicioInscricao);
+            Assert.AreEqual(DateTime.Parse("09/01/2023 17:00:00"), curso.DataFimInscricao);
             Assert.AreEqual(1, curso.IdCapitania);
         }
 
