@@ -13,6 +13,8 @@ Projeto de verificação de clima para Marinha do Brasil
 
 O Mais Marinha foi uma requisição da Capitania dos Portos de Sergipe a Universidade Federal de Sergipe (UFS) para desenvolver um sistema de notificação de clima para aqueles que utilizam o mar como meio recreativo ou profissional.
 
+## Manual
+
 ## Tecnologias-Utilizadas
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
