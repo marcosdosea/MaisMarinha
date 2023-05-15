@@ -9,7 +9,7 @@ Projeto de verificação de clima para Marinha do Brasil
 - [Tecnologias Utilizadas](#Tecnologias-Utilizadas)
 - [Contato](#Contato)
 - [Manual](#Manual)
-- [Vídeo de Apresentação](https://www.youtube.com/watch?v=MiklpXFUljk&ab_channel=CharlesCosta)
+- [Vídeo de Apresentação](blank:https://www.youtube.com/watch?v=MiklpXFUljk&ab_channel=CharlesCosta)
 
 ## Overview
 
