@@ -16,7 +16,7 @@ O Mais Marinha foi uma requisição da Capitania dos Portos de Sergipe a Univers
 
 ## Manual
 
-Teste
+Breve manual mostrando as principais funcionalidades do sistema.
 
 ## Tecnologias-Utilizadas
 
