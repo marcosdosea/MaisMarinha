@@ -9,7 +9,7 @@ Projeto de verificação de clima para Marinha do Brasil
 - [Tecnologias Utilizadas](#Tecnologias-Utilizadas)
 - [Contato](#Contato)
 - [Manual](#Manual)
-- [Vídeo de Apresentação](blank:https://www.youtube.com/watch?v=MiklpXFUljk&ab_channel=CharlesCosta)
+- [Vídeo de Apresentação](https://www.youtube.com/watch?v=MiklpXFUljk&ab_channel=CharlesCosta)
 
 ## Overview
 
@@ -18,6 +18,7 @@ O Mais Marinha foi uma requisição da Capitania dos Portos de Sergipe a Univers
 ## Manual
 
 Breve manual mostrando as principais funcionalidades do sistema.
+- [Manual](#Gerenciamento#Manual Mais Marinha.pptx)
 
 ## Tecnologias-Utilizadas
 
