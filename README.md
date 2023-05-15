@@ -43,6 +43,7 @@ Os desenvolvedores participaram do projeto durante as seguintes Disciplinas:
 * Engenharia de Software 1
 * Engenharia de Software 2
 * Tecnologias De Desenvolvimento Para Internet
+* Qualidade de Software
 
 esse tópico será atualizado a medida que o projeto for prolongado, mas até o momento as seguintes pessoas contribuiram com o Mais Marinha:
 
