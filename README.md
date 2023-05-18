@@ -18,7 +18,7 @@ O Mais Marinha foi uma requisição da Capitania dos Portos de Sergipe a Univers
 ## Manual de Uso
 
 Breve manual mostrando as principais funcionalidades do sistema.
-- [Link do Manual](Gerenciamento/ManualMaisMarinha.pptx)
+- [Link do Manual](https://docs.google.com/presentation/d/1bTmj4yU-Hp6ezdAqMqKXMSx2DVF3tE_P9XZ2ltumdJ0/edit#slide=id.g2464e39ff45_0_16)
 
 ## Tecnologias-Utilizadas
 
